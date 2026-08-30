@@ -1,0 +1,7 @@
+{
+    "app.name": "App Name",
+    "window.minimize": "Minimize",
+    "window.maximize": "Maximize",
+    "window.close": "Close",
+    "window.restore": "Restore"
+}

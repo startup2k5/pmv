@@ -1,0 +1,33 @@
+/* Custom Scrollbar */
+.pmv-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+  scrollbar-gutter: stable;
+}
+
+.pmv-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pmv-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pmv-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.pmv-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Electron Frameless Window Drag Utilities */
+.drag {
+  -webkit-app-region: drag;
+}
+.no-drag {
+  -webkit-app-region: no-drag;
+}
