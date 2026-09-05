@@ -1,0 +1,24 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  profiles:
+    active: ${SPRING_ACTIVE_PROFILE:dev}
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DATA}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASS}
+    hikari:
+      pool-name: GMS2026 POOL
+      connection-timeout: 30000           # 30s - Thời gian chờ lấy connection
+      idle-timeout: 600000                # 10 phút - Thời gian connection nhàn rỗi
+      max-lifetime: 1800000               # 30 phút - Tuổi thọ tối đa của connection
+      validation-timeout: 5000            # 5s - Thời gian validate connection
+      leak-detection-threshold: 60000     # 60s - Phát hiện connection bị leak
+      maximum-pool-size: 20
+      minimum-idle: 10
+      connection-test-query: SELECT 1
+jwt:
+  issuer: ${JWT_ISSUER}
+  expiration: ${JWT_EXPIRATION}
+  secret: ${JWT_SECRET_KEY}
