@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
+import type { User } from '@renderer/types'
 
-export function DashboardView(): React.JSX.Element {
+export interface DashboardViewProps {
+  currentUser?: User | null
+}
+
+export function DashboardView({ currentUser }: DashboardViewProps): React.JSX.Element {
   const [searchTerm, setSearchTerm] = useState('')
   const [filterStatus, setFilterStatus] = useState('all')
 
@@ -10,32 +15,28 @@ export function DashboardView(): React.JSX.Element {
       value: '1,428',
       unit: 'tem',
       change: '+14.2%',
-      icon:
-        'M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z'
+      icon: 'M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z'
     },
     {
       title: 'Hóa đơn VAT đã phát hành',
       value: '386',
       unit: 'hóa đơn',
       change: '+8.5%',
-      icon:
-        'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
+      icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
     },
     {
       title: 'Doanh thu trong ngày',
       value: '48.25M',
       unit: 'VNĐ',
       change: '+5.4%',
-      icon:
-        'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+      icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
     },
     {
       title: 'Máy in hoạt động',
       value: '4/4',
       unit: 'Online',
       change: '100% Sẵn sàng',
-      icon:
-        'M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z'
+      icon: 'M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z'
     }
   ]
 
@@ -85,15 +86,15 @@ export function DashboardView(): React.JSX.Element {
   const statusBadge: Record<string, { label: string; cls: string }> = {
     success: {
       label: 'Thành công',
-      cls: 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/20'
+      cls: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
     },
     printing: {
       label: 'Đang in',
-      cls: 'bg-blue-500/15 text-blue-300 border border-blue-500/20'
+      cls: 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30'
     },
     pending: {
       label: 'Chờ duyệt',
-      cls: 'bg-amber-500/15 text-amber-300 border border-amber-500/20'
+      cls: 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30'
     }
   }
 
@@ -104,9 +105,18 @@ export function DashboardView(): React.JSX.Element {
       {/* Top Header & Quick Actions */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-xl font-bold text-content">Bảng điều khiển trung tâm</h1>
+          <h1 className="text-xl font-bold text-content flex items-center gap-2 flex-wrap">
+            <span>Bảng điều khiển trung tâm</span>
+            {currentUser?.username && (
+              <span className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-accent/10 border border-accent/25 text-accent">
+                {currentUser.username} {currentUser.roleName ? `• ${currentUser.roleName}` : ''}
+              </span>
+            )}
+          </h1>
           <p className="text-xs text-content/50 mt-1">
-            Tổng quan tình trạng in ấn tem nhãn BarTender và phát hành hóa đơn VAT thời gian thực.
+            {currentUser?.scope === 'SYSTEM'
+              ? 'Tổng quan quản trị toàn hệ thống PMV, trạng thái máy in và phát hành hóa đơn thời gian thực.'
+              : `Tổng quan tình trạng chi nhánh ${currentUser?.branchId ? `#${currentUser.branchId}` : ''}, in ấn tem nhãn BarTender và phát hành hóa đơn VAT.`}
           </p>
         </div>
 
@@ -148,7 +158,7 @@ export function DashboardView(): React.JSX.Element {
         {stats.map((stat, idx) => (
           <div
             key={idx}
-            className="p-5 rounded-xl bg-black/45 border border-line-secondary/20 shadow-lg shadow-black/25 flex flex-col justify-between hover:border-line-secondary/40 hover:bg-black/55 transition-colors"
+            className="p-5 rounded-xl bg-surface border border-line shadow-sm flex flex-col justify-between hover:border-accent/40 hover:shadow-md transition-all"
           >
             <div className="flex items-center justify-between">
               <span className="text-xs font-medium text-content/50">{stat.title}</span>
@@ -160,11 +170,7 @@ export function DashboardView(): React.JSX.Element {
                   stroke="currentColor"
                   strokeWidth="1.8"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={stat.icon}
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d={stat.icon} />
                 </svg>
               </div>
             </div>
@@ -177,7 +183,7 @@ export function DashboardView(): React.JSX.Element {
             </div>
 
             <div className="mt-2 pt-2 border-t border-line flex items-center text-[11px]">
-              <span className="text-emerald-300 font-semibold">{stat.change}</span>
+              <span className="text-emerald-500 font-semibold">{stat.change}</span>
               <span className="text-content/40 ml-1.5">so với hôm qua</span>
             </div>
           </div>
@@ -187,7 +193,7 @@ export function DashboardView(): React.JSX.Element {
       {/* Main Grid: Table & Right Widget */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Table: Recent Print Jobs (2 Columns) */}
-        <div className="lg:col-span-2 bg-black/40 rounded-xl border border-line shadow-lg shadow-black/20 flex flex-col gap-2">
+        <div className="lg:col-span-2 bg-surface rounded-xl border border-line shadow-sm flex flex-col gap-2">
           <div className="p-4 border-b border-line flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <h2 className="text-sm font-bold text-content">Lệnh in gần đây</h2>
@@ -258,7 +264,7 @@ export function DashboardView(): React.JSX.Element {
         {/* Right Widget: Quick Print & Engine Health */}
         <div className="space-y-8">
           {/* Quick Print Card */}
-          <div className="p-4 rounded-xl bg-black/40 border border-line shadow-lg shadow-black/20">
+          <div className="p-4 rounded-xl bg-surface border border-line shadow-sm">
             <h3 className="text-sm font-bold text-content">In nhanh mẫu thử</h3>
             <p className="text-xs text-content/40 mt-0.5">
               Chọn mẫu tem để kiểm tra máy in BarTender
@@ -269,7 +275,7 @@ export function DashboardView(): React.JSX.Element {
                 <label className="block text-xs font-semibold text-content/70 mb-1">
                   Mẫu tem nhãn
                 </label>
-                <select className="w-full px-3 py-2 rounded-lg border border-line text-xs bg-surface-secondary text-content/70 focus:outline-none focus:border-accent">
+                <select className="w-full px-3 py-2 rounded-lg border border-line text-xs bg-surface-secondary text-content focus:outline-none focus:border-accent">
                   <option>Tem mã vạch 35x22mm (Chuẩn kho)</option>
                   <option>Tem phụ sản phẩm 50x30mm</option>
                   <option>Tem địa chỉ giao hàng A6</option>
@@ -280,14 +286,14 @@ export function DashboardView(): React.JSX.Element {
                 <label className="block text-xs font-semibold text-content/70 mb-1">
                   Máy in đích
                 </label>
-                <select className="w-full px-3 py-2 rounded-lg border border-line text-xs bg-surface-secondary text-content/70 focus:outline-none focus:border-accent">
+                <select className="w-full px-3 py-2 rounded-lg border border-line text-xs bg-surface-secondary text-content focus:outline-none focus:border-accent">
                   <option>Zebra ZD230 (USB001) - Online</option>
                   <option>TSC TE200 (LAN 192.168.1.120)</option>
                   <option>Xprinter XP-350B</option>
                 </select>
               </div>
 
-              <button className="w-full mt-2 py-2 rounded-lg bg-content hover:bg-content/90 text-black text-xs font-semibold shadow-sm transition-colors cursor-pointer flex items-center justify-center gap-1.5">
+              <button className="w-full mt-2 py-2 rounded-lg bg-accent hover:bg-accent-hover text-white text-xs font-semibold shadow-sm transition-colors cursor-pointer flex items-center justify-center gap-1.5">
                 <svg
                   className="size-3.5"
                   fill="none"
@@ -312,14 +318,14 @@ export function DashboardView(): React.JSX.Element {
           </div>
 
           {/* Engine Health Card */}
-          <div className="p-4 rounded-xl bg-black/40 border border-line shadow-lg shadow-black/20">
+          <div className="p-4 rounded-xl bg-surface border border-line shadow-sm">
             <h3 className="text-sm font-bold text-content">Trạng thái dịch vụ</h3>
 
             <div className="mt-3 space-y-2.5 text-xs">
               <div className="flex items-center justify-between p-2.5 rounded-lg bg-surface-secondary border border-line">
                 <span className="font-medium text-content/80">BarTender Suite Engine</span>
-                <span className="flex items-center gap-1.5 text-emerald-300 font-semibold text-[11px]">
-                  <span className="size-1.5 rounded-full bg-emerald-400"></span>
+                <span className="flex items-center gap-1.5 text-emerald-500 font-semibold text-[11px]">
+                  <span className="size-1.5 rounded-full bg-emerald-500"></span>
                   Hoạt động tốt
                 </span>
               </div>

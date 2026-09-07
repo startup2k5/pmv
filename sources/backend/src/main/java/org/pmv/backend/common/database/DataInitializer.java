@@ -51,18 +51,5 @@ public class DataInitializer {
         }
     }
 
-    private void updatePasswordAccount() {
-        if (!accountRepository.existsByUsername(ADMIN_USERNAME)) {
-            log.warn("Tai khoan [{}] chua ton tai, chua the cap nhat mat khau!", ADMIN_USERNAME);
-            throw new IllegalStateException("Tai khoan [" + ADMIN_USERNAME + "] chua ton tai");
-        }
 
-        String hashPassword = passwordEncoder.encode(ADMIN_PASSWORD);
-        int rows = accountRepository.updatePassword(hashPassword, ADMIN_USERNAME);
-        if (rows > 0) {
-            log.info("Cap nhat mat khau tai khoan [{}] thanh cong!", ADMIN_USERNAME);
-        } else {
-            log.warn("Khong co ban ghi nao duoc cap nhat cho tai khoan [{}]!", ADMIN_USERNAME);
-        }
-    }
 }

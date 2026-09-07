@@ -1,0 +1,345 @@
+{
+    "ALL": {
+        "ALL.OVERVIEW": "Trang tổng quan",
+        "ALL.ACCOUNT": {
+            "ALL.ACCOUNT.NOTIFICATION": {
+                "ALL.ACCOUNT.NOTIFICATION.UPDATE": "Cập nhật trạng thái thông báo"
+            },
+            "ALL.ACCOUNT.PROFILE": {
+                "ALL.ACCOUNT.PROFILE.UPDATE": "Cập nhật trang cá nhân"
+            },
+            "ALL.ACCOUNT.MANAGER": {
+                "ALL.ACCOUNT.MANAGER.SETTING": "Cấu hình người dùng",
+                "ALL.ACCOUNT.MANAGER.PASSWORD.UPDATE": "Thay đổi mật khẩu"
+            }
+        }
+    },
+    "SYSTEM": {
+        "SYSTEM.MANAGER": {
+            "SYSTEM.MANAGER.USER": "Quản lý người dùng hệ thống",
+            "SYSTEM.MANAGER.ROLE": "Quản lý vai trò"
+        },
+        "SYSTEM.SETTING": {
+            "SYSTEM.SETTING.CONFIG": "Cấu hình hệ thống",
+            "SYSTEM.SETTING.LOG": "Xem nhật ký hệ thống"
+        },
+        "SYSTEM.COMPANY": {
+            "SYSTEM.COMPANY.INFO": {
+                "SYSTEM.COMPANY.INFO.UPDATE": "Cập nhật thông tin công ty"
+            },
+            "SYSTEM.COMPANY.BRANCH": {
+                "SYSTEM.COMPANY.BRANCH.CREATE": "Tạo mới chi nhánh",
+                "SYSTEM.COMPANY.BRANCH.UPDATE": "Cập nhật thông tin chi nhánh",
+                "SYSTEM.COMPANY.BRANCH.DELETE": "Xóa chi nhánh"
+            }
+        },
+        "SYSTEM.PRICE": {
+            "SYSTEM.PRICE.TYPE": {
+                "SYSTEM.PRICE.TYPE.CREATE": "Tạo mới loại giá",
+                "SYSTEM.PRICE.TYPE.UPDATE": "Cập nhật loại giá",
+                "SYSTEM.PRICE.TYPE.DELETE": "Xóa loại giá"
+            },
+            "SYSTEM.PRICE.FORMULA": {
+                "SYSTEM.PRICE.FORMULA.CREATE": "Tạo mới công thức tính giá",
+                "SYSTEM.PRICE.FORMULA.UPDATE": "Cập nhật công thức tính giá",
+                "SYSTEM.PRICE.FORMULA.DELETE": "Xóa công thức tính giá"
+            }
+        },
+        "SYSTEM.CATEGORY": {
+            "SYSTEM.CATEGORY.UNIT": {
+                "SYSTEM.CATEGORY.UNIT.CREATE": "Tạo mới đơn vị tính",
+                "SYSTEM.CATEGORY.UNIT.UPDATE": "Cập nhật đơn vị tính",
+                "SYSTEM.CATEGORY.UNIT.DELETE": "Xóa đơn vị tính"
+            },
+            "SYSTEM.CATEGORY.PRODUCT_GROUP": {
+                "SYSTEM.CATEGORY.PRODUCT_GROUP.CREATE": "Tạo mới nhóm hàng",
+                "SYSTEM.CATEGORY.PRODUCT_GROUP.UPDATE": "Cập nhật nhóm hàng",
+                "SYSTEM.CATEGORY.PRODUCT_GROUP.DELETE": "Xóa nhóm hàng"
+            }
+        },
+        "SYSTEM.REPORT": {
+            "SYSTEM.REPORT.STOCK": {
+                "SYSTEM.REPORT.STOCK.SEARCH_DATE": "Tìm kiếm theo ngày",
+                "SYSTEM.REPORT.STOCK.SEARCH_WAREHOUSE": "Tìm kiếm theo kho hàng"
+            },
+            "SYSTEM.REPORT.SELL": {
+                "SYSTEM.REPORT.SELL.SEARCH_DATE": "Tìm kiếm theo ngày",
+                "SYSTEM.REPORT.SELL.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+            },
+            "SYSTEM.REPORT.BUY": {
+                "SYSTEM.REPORT.BUY.SEARCH_DATE": "Tìm kiếm theo ngày",
+                "SYSTEM.REPORT.BUY.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+            },
+            "SYSTEM.REPORT.IMPORT_EXPORT": {
+                "SYSTEM.REPORT.IMPORT": {
+                    "SYSTEM.REPORT.IMPORT.SEARCH_DATE": "Tìm kiếm từ ngày đến ngày",
+                    "SYSTEM.REPORT.IMPORT.SEARCH_WAREHOUSE": "Tìm kiếm theo kho",
+                    "SYSTEM.REPORT.IMPORT.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+                },
+                "SYSTEM.REPORT.EXPORT": {
+                    "SYSTEM.REPORT.EXPORT.SEARCH_DATE": "Tìm kiếm từ ngày đến ngày",
+                    "SYSTEM.REPORT.EXPORT.SEARCH_WAREHOUSE": "Tìm kiếm theo kho",
+                    "SYSTEM.REPORT.EXPORT.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+                }
+            },
+            "SYSTEM.REPORT.CUSTOMER": {
+                "SYSTEM.REPORT.CUSTOMER.SEARCH_DATE": "Tìm kiếm theo ngày"
+            },
+            "SYSTEM.REPORT.SUPPLIER": {
+                "SYSTEM.REPORT.SUPPLIER.SEARCH_DATE": "Tìm kiếm theo ngày"
+            },
+            "SYSTEM.REPORT.EMPLOYEE": {
+                "SYSTEM.REPORT.EMPLOYEE.SEARCH_DATE": "Tìm kiếm theo ngày"
+            },
+            "SYSTEM.REPORT.ACCOUNTING": {
+                "SYSTEM.REPORT.ACCOUNTING.IAE": {
+                    "SYSTEM.REPORT.ACCOUNTING.IAE.SEARCH_DATE": "Tìm kiếm theo ngày"
+                },
+                "SYSTEM.REPORT.ACCOUNTING.DEBT": {
+                    "SYSTEM.REPORT.ACCOUNTING.DEBT.SEARCH_DATE": "Tìm kiếm theo ngày"
+                }
+            }
+        }
+    },
+    "BRANCH": {
+        "BRANCH.SETTING": {
+            "BRANCH.SETTING.INFO": "Cập nhật thông tin chi nhánh",
+            "BRANCH.SETTING.PRICE": "Cấu hình giá mặc định"
+        },
+        "BRANCH.INVOICE": {
+            "BRANCH.INVOICE.SELL": {
+                "BRANCH.INVOICE.SELL.CREATE": "Tạo mới hóa đơn bán hàng",
+                "BRANCH.INVOICE.SELL.UPDATE": "Cập nhật hóa đơn bán hàng",
+                "BRANCH.INVOICE.SELL.DELETE": "Xóa hóa đơn bán hàng",
+                "BRANCH.INVOICE.SELL.PRINT": "In hóa đơn bán hàng",
+                "BRANCH.INVOICE.SELL.SEARCH_DATE": "Tìm kiếm hóa đơn bán hàng theo ngày",
+                "BRANCH.INVOICE.SELL.SEARCH_EMPLOYEE": "Tìm kiếm hóa đơn bán hàng theo nhân viên",
+                "BRANCH.INVOICE.SELL.APPROVE": "Duyệt hóa đơn bán hàng",
+                "BRANCH.INVOICE.SELL.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                "BRANCH.INVOICE.SELL.CHANGE_PRICE": "Cho phép thay đổi giá",
+                "BRANCH.INVOICE.SELL.CHANGE_DATE": "Cho phép thay đổi ngày bán"
+            },
+            "BRANCH.INVOICE.BUY": {
+                "BRANCH.INVOICE.BUY.CREATE": "Tạo mới hóa đơn mua hàng",
+                "BRANCH.INVOICE.BUY.UPDATE": "Cập nhật hóa đơn mua hàng",
+                "BRANCH.INVOICE.BUY.DELETE": "Xóa hóa đơn mua hàng",
+                "BRANCH.INVOICE.BUY.PRINT": "In hóa đơn mua hàng",
+                "BRANCH.INVOICE.BUY.SEARCH_DATE": "Tìm kiếm hóa đơn mua hàng theo ngày",
+                "BRANCH.INVOICE.BUY.SEARCH_EMPLOYEE": "Tìm kiếm hóa đơn mua hàng theo nhân viên",
+                "BRANCH.INVOICE.BUY.APPROVE": "Duyệt hóa đơn mua hàng",
+                "BRANCH.INVOICE.BUY.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                "BRANCH.INVOICE.BUY.CHANGE_PRICE": "Cho phép thay đổi giá",
+                "BRANCH.INVOICE.BUY.CHANGE_DATE": "Cho phép thay đổi ngày mua"
+            },
+            "BRANCH.INVOICE.SERVICE": {
+                "BRANCH.INVOICE.SERVICE.CREATE": "Tạo mới hóa đơn dịch vụ",
+                "BRANCH.INVOICE.SERVICE.UPDATE": "Cập nhật hóa đơn dịch vụ",
+                "BRANCH.INVOICE.SERVICE.DELETE": "Xóa hóa đơn dịch vụ",
+                "BRANCH.INVOICE.SERVICE.PRINT": "In hóa đơn dịch vụ",
+                "BRANCH.INVOICE.SERVICE.SEARCH_DATE": "Tìm kiếm hóa đơn dịch vụ theo ngày",
+                "BRANCH.INVOICE.SERVICE.SEARCH_EMPLOYEE": "Tìm kiếm hóa đơn dịch vụ theo nhân viên",
+                "BRANCH.INVOICE.SERVICE.APPROVE": "Duyệt hóa đơn dịch vụ",
+                "BRANCH.INVOICE.SERVICE.CHANGE_PRICE": "Cho phép thay đổi giá",
+                "BRANCH.INVOICE.SERVICE.CHANGE_DATE": "Cho phép thay đổi ngày dịch vụ"
+            },
+            "BRANCH.INVOICE.ORDER": {
+                "BRANCH.INVOICE.ORDER.SELL": {
+                    "BRANCH.INVOICE.ORDER.SELL.CREATE": "Tạo mới đặt hàng bán",
+                    "BRANCH.INVOICE.ORDER.SELL.UPDATE": "Cập nhật đặt hàng bán",
+                    "BRANCH.INVOICE.ORDER.SELL.DELETE": "Xóa đặt hàng bán",
+                    "BRANCH.INVOICE.ORDER.SELL.PRINT": "In đặt hàng bán",
+                    "BRANCH.INVOICE.ORDER.SELL.SEARCH_DATE": "Tìm kiếm đặt hàng bán theo ngày",
+                    "BRANCH.INVOICE.ORDER.SELL.SEARCH_EMPLOYEE": "Tìm kiếm đặt hàng bán theo nhân viên",
+                    "BRANCH.INVOICE.ORDER.SELL.APPROVE": "Duyệt đặt hàng bán",
+                    "BRANCH.INVOICE.ORDER.SELL.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                    "BRANCH.INVOICE.ORDER.SELL.CHANGE_PRICE": "Cho phép thay đổi giá",
+                    "BRANCH.INVOICE.ORDER.SELL.CHANGE_DATE": "Cho phép thay đổi ngày đặt hàng"
+                },
+                "BRANCH.INVOICE.ORDER.BUY": {
+                    "BRANCH.INVOICE.ORDER.BUY.CREATE": "Tạo mới đặt hàng mua",
+                    "BRANCH.INVOICE.ORDER.BUY.UPDATE": "Cập nhật đặt hàng mua",
+                    "BRANCH.INVOICE.ORDER.BUY.DELETE": "Xóa đặt hàng mua",
+                    "BRANCH.INVOICE.ORDER.BUY.PRINT": "In đặt hàng mua",
+                    "BRANCH.INVOICE.ORDER.BUY.SEARCH_DATE": "Tìm kiếm đặt hàng mua theo ngày",
+                    "BRANCH.INVOICE.ORDER.BUY.SEARCH_EMPLOYEE": "Tìm kiếm đặt hàng mua theo nhân viên",
+                    "BRANCH.INVOICE.ORDER.BUY.APPROVE": "Duyệt đặt hàng mua",
+                    "BRANCH.INVOICE.ORDER.BUY.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                    "BRANCH.INVOICE.ORDER.BUY.CHANGE_PRICE": "Cho phép thay đổi giá",
+                    "BRANCH.INVOICE.ORDER.BUY.CHANGE_DATE": "Cho phép thay đổi ngày đặt hàng"
+                }
+            },
+            "BRANCH.INVOICE.RETURN": {
+                "BRANCH.INVOICE.RETURN.SELL": {
+                    "BRANCH.INVOICE.RETURN.SELL.CREATE": "Tạo mới trả hàng bán",
+                    "BRANCH.INVOICE.RETURN.SELL.UPDATE": "Cập nhật trả hàng bán",
+                    "BRANCH.INVOICE.RETURN.SELL.DELETE": "Xóa trả hàng bán",
+                    "BRANCH.INVOICE.RETURN.SELL.PRINT": "In trả hàng bán",
+                    "BRANCH.INVOICE.RETURN.SELL.SEARCH_DATE": "Tìm kiếm trả hàng bán theo ngày",
+                    "BRANCH.INVOICE.RETURN.SELL.SEARCH_EMPLOYEE": "Tìm kiếm trả hàng bán theo nhân viên",
+                    "BRANCH.INVOICE.RETURN.SELL.APPROVE": "Duyệt trả hàng bán",
+                    "BRANCH.INVOICE.RETURN.SELL.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                    "BRANCH.INVOICE.RETURN.SELL.CHANGE_PRICE": "Cho phép thay đổi giá",
+                    "BRANCH.INVOICE.RETURN.SELL.CHANGE_DATE": "Cho phép thay đổi ngày trả hàng"
+                },
+                "BRANCH.INVOICE.RETURN.BUY": {
+                    "BRANCH.INVOICE.RETURN.BUY.CREATE": "Tạo mới trả hàng mua",
+                    "BRANCH.INVOICE.RETURN.BUY.UPDATE": "Cập nhật trả hàng mua",
+                    "BRANCH.INVOICE.RETURN.BUY.DELETE": "Xóa trả hàng mua",
+                    "BRANCH.INVOICE.RETURN.BUY.PRINT": "In trả hàng mua",
+                    "BRANCH.INVOICE.RETURN.BUY.SEARCH_DATE": "Tìm kiếm trả hàng mua theo ngày",
+                    "BRANCH.INVOICE.RETURN.BUY.SEARCH_EMPLOYEE": "Tìm kiếm trả hàng mua theo nhân viên",
+                    "BRANCH.INVOICE.RETURN.BUY.APPROVE": "Duyệt trả hàng mua",
+                    "BRANCH.INVOICE.RETURN.BUY.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                    "BRANCH.INVOICE.RETURN.BUY.CHANGE_PRICE": "Cho phép thay đổi giá",
+                    "BRANCH.INVOICE.RETURN.BUY.CHANGE_DATE": "Cho phép thay đổi ngày trả hàng"
+                }
+            },
+            "BRANCH.INVOICE.EXCHANGE": {
+                "BRANCH.INVOICE.EXCHANGE.CREATE": "Tạo mới hóa đơn đổi hàng",
+                "BRANCH.INVOICE.EXCHANGE.UPDATE": "Cập nhật hóa đơn đổi hàng",
+                "BRANCH.INVOICE.EXCHANGE.DELETE": "Xóa hóa đơn đổi hàng",
+                "BRANCH.INVOICE.EXCHANGE.PRINT": "In hóa đơn đổi hàng",
+                "BRANCH.INVOICE.EXCHANGE.SEARCH_DATE": "Tìm kiếm hóa đơn đổi hàng theo ngày",
+                "BRANCH.INVOICE.EXCHANGE.SEARCH_EMPLOYEE": "Tìm kiếm hóa đơn đổi hàng theo nhân viên",
+                "BRANCH.INVOICE.EXCHANGE.APPROVE": "Duyệt hóa đơn đổi hàng",
+                "BRANCH.INVOICE.EXCHANGE.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                "BRANCH.INVOICE.EXCHANGE.CHANGE_PRICE": "Cho phép thay đổi giá",
+                "BRANCH.INVOICE.EXCHANGE.CHANGE_DATE": "Cho phép thay đổi ngày đổi hàng"
+            },
+            "BRANCH.INVOICE.DELIVERY": {
+                "BRANCH.INVOICE.DELIVERY.CREATE": "Tạo mới hóa đơn giao hàng",
+                "BRANCH.INVOICE.DELIVERY.UPDATE": "Cập nhật hóa đơn giao hàng",
+                "BRANCH.INVOICE.DELIVERY.DELETE": "Xóa hóa đơn giao hàng",
+                "BRANCH.INVOICE.DELIVERY.PRINT": "In hóa đơn giao hàng",
+                "BRANCH.INVOICE.DELIVERY.SEARCH_DATE": "Tìm kiếm hóa đơn giao hàng theo ngày",
+                "BRANCH.INVOICE.DELIVERY.SEARCH_EMPLOYEE": "Tìm kiếm hóa đơn giao hàng theo nhân viên",
+                "BRANCH.INVOICE.DELIVERY.APPROVE": "Duyệt hóa đơn giao hàng",
+                "BRANCH.INVOICE.DELIVERY.CHANGE_WEIGHT": "Cho phép thay đổi trọng lượng",
+                "BRANCH.INVOICE.DELIVERY.CHANGE_PRICE": "Cho phép thay đổi giá",
+                "BRANCH.INVOICE.DELIVERY.CHANGE_DATE": "Cho phép thay đổi ngày giao hàng"
+            }
+        },
+        "BRANCH.PRODUCT": "Danh mục hàng hóa",
+        "BRANCH.WAREHOUSE": {
+            "BRANCH.WAREHOUSE.IMPORT": {
+                "BRANCH.WAREHOUSE.IMPORT.CREATE": "Tạo mới phiếu nhập kho",
+                "BRANCH.WAREHOUSE.IMPORT.UPDATE": "Cập nhật phiếu nhập kho",
+                "BRANCH.WAREHOUSE.IMPORT.DELETE": "Xóa phiếu nhập kho",
+                "BRANCH.WAREHOUSE.IMPORT.PRINT": "In phiếu nhập kho",
+                "BRANCH.WAREHOUSE.IMPORT.SEARCH_DATE": "Tìm kiếm phiếu nhập kho theo ngày",
+                "BRANCH.WAREHOUSE.IMPORT.SEARCH_EMPLOYEE": "Tìm kiếm phiếu nhập kho theo nhân viên"
+            },
+            "BRANCH.WAREHOUSE.EXPORT": {
+                "BRANCH.WAREHOUSE.EXPORT.CREATE": "Tạo mới phiếu xuất kho",
+                "BRANCH.WAREHOUSE.EXPORT.UPDATE": "Cập nhật phiếu xuất kho",
+                "BRANCH.WAREHOUSE.EXPORT.DELETE": "Xóa phiếu xuất kho",
+                "BRANCH.WAREHOUSE.EXPORT.PRINT": "In phiếu xuất kho",
+                "BRANCH.WAREHOUSE.EXPORT.SEARCH_DATE": "Tìm kiếm phiếu xuất kho theo ngày",
+                "BRANCH.WAREHOUSE.EXPORT.SEARCH_EMPLOYEE": "Tìm kiếm phiếu xuất kho theo nhân viên"
+            }
+        },
+        "BRANCH.ACCOUNTING": {
+            "BRANCH.ACCOUNTING.IAE": {
+                "BRANCH.ACCOUNTING.IAE.CREATE": "Tạo mới phiếu thu chi",
+                "BRANCH.ACCOUNTING.IAE.UPDATE": "Cập nhật phiếu thu chi",
+                "BRANCH.ACCOUNTING.IAE.DELETE": "Xóa phiếu thu chi",
+                "BRANCH.ACCOUNTING.IAE.PRINT": "In phiếu thu chi",
+                "BRANCH.ACCOUNTING.IAE.SEARCH_DATE": "Tìm kiếm phiếu thu chi theo ngày"
+            }
+        },
+        "BRANCH.PRICE": {
+            "BRANCH.PRICE.TYPE": {
+                "BRANCH.PRICE.TYPE.CREATE": "Tạo mới loại giá",
+                "BRANCH.PRICE.TYPE.UPDATE": "Cập nhật loại giá",
+                "BRANCH.PRICE.TYPE.DELETE": "Xóa loại giá"
+            },
+            "BRANCH.PRICE.FORMULA": {
+                "BRANCH.PRICE.FORMULA.CREATE": "Tạo mới công thức tính giá",
+                "BRANCH.PRICE.FORMULA.UPDATE": "Cập nhật công thức tính giá",
+                "BRANCH.PRICE.FORMULA.DELETE": "Xóa công thức tính giá"
+            }
+        },
+        "BRANCH.EMPLOYEE": {
+            "BRANCH.EMPLOYEE.CREATE": "Tạo mới nhân viên",
+            "BRANCH.EMPLOYEE.UPDATE": "Cập nhật nhân viên",
+            "BRANCH.EMPLOYEE.DELETE": "Xóa nhân viên"
+        },
+        "BRANCH.REPORT": {
+            "BRANCH.REPORT.STOCK": {
+                "BRANCH.REPORT.STOCK.SEARCH_DATE": "Tìm kiếm theo ngày",
+                "BRANCH.REPORT.STOCK.SEARCH_WAREHOUSE": "Tìm kiếm theo kho hàng"
+            },
+            "BRANCH.REPORT.SELL": {
+                "BRANCH.REPORT.SELL.SEARCH_DATE": "Tìm kiếm theo ngày",
+                "BRANCH.REPORT.SELL.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+            },
+            "BRANCH.REPORT.BUY": {
+                "BRANCH.REPORT.BUY.SEARCH_DATE": "Tìm kiếm theo ngày",
+                "BRANCH.REPORT.BUY.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+            },
+            "BRANCH.REPORT.IMPORT_EXPORT": {
+                "BRANCH.REPORT.IMPORT": {
+                    "BRANCH.REPORT.IMPORT.SEARCH_DATE": "Tìm kiếm từ ngày đến ngày",
+                    "BRANCH.REPORT.IMPORT.SEARCH_WAREHOUSE": "Tìm kiếm theo kho",
+                    "BRANCH.REPORT.IMPORT.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+                },
+                "BRANCH.REPORT.EXPORT": {
+                    "BRANCH.REPORT.EXPORT.SEARCH_DATE": "Tìm kiếm từ ngày đến ngày",
+                    "BRANCH.REPORT.EXPORT.SEARCH_WAREHOUSE": "Tìm kiếm theo kho",
+                    "BRANCH.REPORT.EXPORT.SEARCH_EMPLOYEE": "Tìm kiếm theo nhân viên"
+                }
+            },
+            "BRANCH.REPORT.CUSTOMER": {
+                "BRANCH.REPORT.CUSTOMER.SEARCH_DATE": "Tìm kiếm theo ngày"
+            },
+            "BRANCH.REPORT.SUPPLIER": {
+                "BRANCH.REPORT.SUPPLIER.SEARCH_DATE": "Tìm kiếm theo ngày"
+            },
+            "BRANCH.REPORT.EMPLOYEE": {
+                "BRANCH.REPORT.EMPLOYEE.SEARCH_DATE": "Tìm kiếm theo ngày"
+            },
+            "BRANCH.REPORT.ACCOUNTING": {
+                "BRANCH.REPORT.ACCOUNTING.IAE": {
+                    "BRANCH.REPORT.ACCOUNTING.IAE.SEARCH_DATE": "Tìm kiếm thu chi theo ngày"
+                },
+                "BRANCH.REPORT.ACCOUNTING.DEBT": {
+                    "BRANCH.REPORT.ACCOUNTING.DEBT.SEARCH_DATE": "Tìm kiếm theo ngày"
+                }
+            }
+        },
+        "BRANCH.CATEGORY": {
+            "BRANCH.CATEGORY.CUSTOMER": {
+                "BRANCH.CATEGORY.CUSTOMER.CREATE": "Tạo mới khách hàng",
+                "BRANCH.CATEGORY.CUSTOMER.UPDATE": "Cập nhật khách hàng",
+                "BRANCH.CATEGORY.CUSTOMER.DELETE": "Xóa khách hàng"
+            },
+            "BRANCH.CATEGORY.SUPPLIER": {
+                "BRANCH.CATEGORY.SUPPLIER.CREATE": "Tạo mới nhà cung cấp",
+                "BRANCH.CATEGORY.SUPPLIER.UPDATE": "Cập nhật nhà cung cấp",
+                "BRANCH.CATEGORY.SUPPLIER.DELETE": "Xóa nhà cung cấp"
+            },
+            "BRANCH.CATEGORY.WAREHOUSE": {
+                "BRANCH.CATEGORY.WAREHOUSE.CREATE": "Tạo mới kho hàng",
+                "BRANCH.CATEGORY.WAREHOUSE.UPDATE": "Cập nhật kho hàng",
+                "BRANCH.CATEGORY.WAREHOUSE.DELETE": "Xóa kho hàng"
+            },
+            "BRANCH.CATEGORY.SERVICE": {
+                "BRANCH.CATEGORY.SERVICE.CREATE": "Tạo mới dịch vụ",
+                "BRANCH.CATEGORY.SERVICE.UPDATE": "Cập nhật dịch vụ",
+                "BRANCH.CATEGORY.SERVICE.DELETE": "Xóa dịch vụ"
+            },
+            "BRANCH.CATEGORY.ACCOUNTING_ENTRY": {
+                "BRANCH.CATEGORY.ACCOUNTING_ENTRY.ACCOUNT": {
+                    "BRANCH.CATEGORY.ACCOUNTING_ENTRY.ACCOUNT.CREATE": "Tạo mới tài khoản kế toán",
+                    "BRANCH.CATEGORY.ACCOUNTING_ENTRY.ACCOUNT.UPDATE": "Cập nhật tài khoản kế toán",
+                    "BRANCH.CATEGORY.ACCOUNTING_ENTRY.ACCOUNT.DELETE": "Xóa tài khoản kế toán"
+                },
+                "BRANCH.CATEGORY.ACCOUNTING_ENTRY.JOURNAL": {
+                    "BRANCH.CATEGORY.ACCOUNTING_ENTRY.JOURNAL.CREATE": "Tạo mới định khoản",
+                    "BRANCH.CATEGORY.ACCOUNTING_ENTRY.JOURNAL.UPDATE": "Cập nhật định khoản",
+                    "BRANCH.CATEGORY.ACCOUNTING_ENTRY.JOURNAL.DELETE": "Xóa định khoản"
+                }
+            }
+        }
+    }
+}

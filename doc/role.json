@@ -1,0 +1,31 @@
+{
+    "SYSTEM": {
+        "SYSTEM_ADMIN": {
+            "code": "SYSTEM_ADMIN",
+            "name": "System Admin",
+            "description": "Quản trị viên hệ thống với quyền truy cập đầy đủ vào tất cả các chức năng của hệ thống."
+        },
+        "SYSTEM_USER": {
+            "code": "SYSTEM_USER",
+            "name": "System User",
+            "description": "Người dùng hệ thống với quyền truy cập có hạn vào các chức năng của hệ thống."
+        }
+    },
+    "BRANCH": {
+        "BRANCH_ADMIN": {
+            "code": "BRANCH_ADMIN",
+            "name": "Branch Manager",
+            "description": "Quản lý chi nhánh với quyền truy cập vào các chức năng cụ thể của chi nhánh."
+        },
+        "BRANCH_ACCOUNTANT": {
+            "code": "BRANCH_ACCOUNTANT",
+            "name": "Branch Accountant",
+            "description": "Kế toán chi nhánh với quyền truy cập vào các chức năng liên quan đến quản lý tài chính và báo cáo."
+        },
+        "BRANCH_SALES_STAFF": {
+            "code": "BRANCH_SALES_STAFF",
+            "name": "Branch Sales Staff",
+            "description": "Nhân viên bán hàng với quyền truy cập vào các chức năng liên quan đến quản lý đơn hàng và khách hàng."
+        }
+    }
+}

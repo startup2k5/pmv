@@ -1,0 +1,437 @@
+<mxfile host="65bd71144e">
+    <diagram name="1. Kiến Trúc Tổng Thể PMV" id="pmv-overview">
+        <mxGraphModel dx="2151" dy="911" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F8FAFC" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="banner_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F172A;strokeColor=#1E293B;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="1560" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="banner_title" value="SƠ ĐỒ KIẾN TRÚC VÀ PHÂN HỆ CHỨC NĂNG - PHẦN MỀM QUẢN LÝ VÀNG BẠC ĐÁ QUÝ (PMV)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F8FAFC;fontSize=17;fontStyle=1;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="27" width="1520" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="banner_sub" value="TẦNG TRÊN: BẢNG GIÁ VÀNG 1 GIÁ, NHÓM HÀNG DÙNG CHUNG, QUẢN TRỊ &amp; ĐVT • TẦNG DƯỚI: HÓA ĐƠN ĐIỆN TỬ, KHO HÀNG &amp; QUẦY BÁN DÙNG RIÊNG TỪNG CHI NHÁNH" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#38BDF8;fontSize=11;fontStyle=1;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="55" width="1520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="grp_shared" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0284C7;strokeWidth=2;arcSize=6;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="47" y="119.5" width="1560" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="shared_header" value="🌐 TẦNG 1: CẤP TỔNG CÔNG TY - TẤT CẢ CÁC THÀNH PHẦN DÙNG CHUNG TOÀN HỆ THỐNG (GLOBAL SHARED SCOPE)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0369A1;strokeColor=#0284C7;fontColor=#FFFFFF;fontSize=12;fontStyle=1;align=center;arcSize=4;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="112" width="1530" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_card_1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F9FF;strokeColor=#BAE6FD;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="152" width="290" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c1_title" value="🔐 1. Quản Trị &amp; Role Toàn Hệ Thống" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;fontColor=#FFFFFF;fontStyle=1;fontSize=11;arcSize=4;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="160" width="270" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c1_content" value="• Danh sách Quyền hệ thống (System Permissions)&#xa;• Vai trò toàn quốc: Super Admin, Ban Giám Đốc Tổng, Kế Toán Tổng&#xa;• Quản lý danh sách Chi nhánh (Tạo mới, Khóa CN)&#xa;• Quản trị phân quyền tài khoản toàn hệ thống" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#0C4A6E;fontSize=10.5;spacingLeft=5;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="192" width="270" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_card_2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F9FF;strokeColor=#BAE6FD;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="152" width="290" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c2_title" value="⚖️ 2. Đơn Vị Tính &amp; Chuẩn TT22" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;fontColor=#FFFFFF;fontStyle=1;fontSize=11;arcSize=4;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="160" width="270" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c2_content" value="• Đơn vị tính vàng chuẩn: Cây, Chỉ, Phân, Ly, Gam&#xa;• Đơn vị tính đá: Carat, Hạt, Ly đá&#xa;• Quy chuẩn hàm lượng tuổi vàng tối thiểu theo Thông tư 22/2013/TT-BKHCN&#xa;• Bộ từ điển mẫu chuẩn hệ thống" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#0C4A6E;fontSize=10.5;spacingLeft=5;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="192" width="270" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_card_3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF9C3;strokeColor=#EAB308;strokeWidth=1.5;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="665" y="152" width="290" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c3_title" value="📊 3. BẢNG GIÁ VÀNG DÙNG CHUNG (1 GIÁ)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CA8A04;strokeColor=#A16207;fontColor=#FFFFFF;fontStyle=1;fontSize=11;arcSize=4;" vertex="1" parent="1">
+                    <mxGeometry x="675" y="160" width="270" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c3_content" value="• Giá Mua vào &amp; Giá Bán ra LẤY CHUNG 1 GIÁ TOÀN QUỐC&#xa;• Tổng Cty cập nhật $\rightarrow$ Tự động đồng bộ tức thì đến tất cả chi nhánh&#xa;• Bắn dữ liệu tự động ra bảng LED điện tử tại tất cả các cửa hàng&#xa;• Lưu lịch sử biến động giá vàng toàn hệ thống&#xa;• Tất cả quầy POS chi nhánh áp dụng chung 1 giá này" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#713F12;fontSize=10.5;spacingLeft=5;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="675" y="192" width="270" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_card_4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#10B981;strokeWidth=1.5;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="152" width="290" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c4_title" value="🏷️ 4. NHÓM HÀNG DÙNG CHUNG (1 BỘ DUY NHẤT)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#047857;strokeColor=#065F46;fontColor=#FFFFFF;fontStyle=1;fontSize=11;arcSize=4;" vertex="1" parent="1">
+                    <mxGeometry x="980" y="160" width="270" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c4_content" value="• 1 Danh mục Nhóm Hàng chuẩn duy nhất toàn quốc&#xa;• Cây nhóm sản phẩm: Nhẫn, Dây chuyền, Kiềng, Lắc, Bông tai, Vòng tay, Vàng miếng SJC...&#xa;• Tổng Cty định nghĩa $\rightarrow$ Tất cả các Chi nhánh áp dụng chung 1 bộ nhóm hàng này&#xa;• Thống nhất mã nhóm hàng khi nhập kho, in tem &amp; báo cáo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#064E3B;fontSize=10.5;spacingLeft=5;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="980" y="192" width="270" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_card_5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F9FF;strokeColor=#BAE6FD;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="1275" y="152" width="310" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c5_title" value="📊 5. Báo Cáo Hợp Nhất Hệ Thống" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;fontColor=#FFFFFF;fontStyle=1;fontSize=11;arcSize=4;" vertex="1" parent="1">
+                    <mxGeometry x="1285" y="160" width="290" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sh_c5_content" value="• Báo cáo Doanh thu hợp nhất tất cả chi nhánh&#xa;• Báo cáo Tổng tồn kho vàng toàn quốc theo Nhóm hàng&#xa;• Báo cáo dòng tiền, lợi nhuận gộp toàn hệ thống&#xa;• Nhật ký vết hoạt động (System Audit Log)&#xa;• So sánh hiệu quả kinh doanh giữa các chi nhánh" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#0C4A6E;fontSize=10.5;spacingLeft=5;" vertex="1" parent="1">
+                    <mxGeometry x="1285" y="192" width="290" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_shared_to_branch" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284C7;strokeWidth=2.5;" edge="1" parent="1" source="grp_shared" target="node_chi_nhanh">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_chi_nhanh" value="🏬 TẦNG 2: CẤP CHI NHÁNH - HÓA ĐƠN ĐIỆN TỬ, LOẠI VÀNG KINH DOANH, KHO &amp; QUẦY BÁN DÙNG RIÊNG TỪNG CỬA HÀNG (BRANCH ISOLATED SCOPE)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F172A;strokeColor=#1E293B;fontColor=#F8FAFC;fontStyle=1;fontSize=12.5;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="345" width="1560" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="grp_user_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF5FF;strokeColor=#C084FC;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="410" width="295" height="455" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_user" value="👤 1. NHÂN SỰ &amp; QUẦY DÙNG RIÊNG CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7E22CE;strokeColor=#6B21A8;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="425" width="265" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="u1_nhan_vien" value="👥 Nhân Viên Riêng Của Chi Nhánh&#xa;• Mã NV, CMND/CCCD, SĐT&#xa;• Thuộc Chi nhánh này, phân ca làm việc" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=11;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="470" width="265" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="u2_tai_khoan" value="🔑 Tài Khoản Đăng Nhập Tại CN&#xa;• Username/Pass của nhân viên làm tại CN&#xa;• Trạng thái hoạt động (Active/Lock)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=11;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="540" width="265" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="u3_vai_tro" value="🛡️ Phân Quyền Riêng Tại Chi Nhánh&#xa;• Cửa hàng trưởng (Duyệt chiết khấu, duyệt hủy đơn)&#xa;• Thu ngân (Bán hàng, thu đổi, xuất HĐ)&#xa;• Thủ kho (Nhập/xuất kho CN, in tem mã)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="605" width="265" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="u4_phan_quyen_quay" value="🎯 Quầy Bán Hàng Dùng Riêng (Counters)&#xa;• Quầy 1, Quầy 2... riêng của chi nhánh&#xa;• Két tiền và phân quyền nhân viên theo quầy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=11;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="690" width="265" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="u5_nhat_ky" value="📝 Nhật Ký Hoạt Động Riêng Của CN&#xa;• Lịch sử bán hàng, thu đổi, sửa hủy đơn nội bộ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=11;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="760" width="265" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="grp_cat_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF9C3;strokeColor=#FACC15;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="355" y="410" width="295" height="455" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_cat" value="💎 2. LOẠI VÀNG KINH DOANH &amp; QUỸ CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CA8A04;strokeColor=#A16207;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="425" width="265" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_gold_type_cn" value="💎 DANH MỤC LOẠI VÀNG KINH DOANH TẠI CN&#xa;• Từng CN chọn các loại vàng kinh doanh:&#xa;  + CN 1: Vàng 9999, 18K, Ý 750, Vàng Trắng&#xa;  + CN 2: Vàng 9999, 610, 10K Tây, Vàng SJC&#xa;  + CN 3: Vàng Hạt Nguyên Liệu, Vàng Thỏi Thô" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF08A;strokeColor=#EAB308;fontColor=#713F12;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="470" width="265" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_price_sync" value="📡 ĐỒNG BỘ GIÁ VÀNG CHUNG VỀ CN&#xa;• Tự động nhận 1 Bảng Giá Vàng Chung từ Tổng Cty&#xa;• Hiển thị ra màn hình LED tại sảnh cửa hàng&#xa;• Tự động áp giá vào đơn Bán / Thu đổi tại quầy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE047;fontColor=#854D0E;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="595" width="265" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_counter_fund" value="💰 Sổ Quỹ Tiền Mặt &amp; STK Ngân Hàng CN&#xa;• Quỹ tiền mặt đầu ca/kết ca, STK nhận tiền QR riêng của Chi nhánh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE047;fontColor=#854D0E;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="720" width="265" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="grp_inv_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDFA;strokeColor=#5EEAD4;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="410" width="295" height="455" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_inv" value="🧾 3. HĐĐT, ĐỐI TÁC &amp; KHÁCH RIÊNG CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F766E;strokeColor=#115E59;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="685" y="425" width="265" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_einvoice_cn" value="🧾 CẤU HÌNH HĐĐT RIÊNG CHI NHÁNH&#xa;• MST Chi nhánh (10 hoặc 13 số riêng)&#xa;• Ký hiệu hóa đơn riêng (Serial: 1C26TCN1...)&#xa;• Chữ ký số HSM / Token riêng của CN&#xa;• Tài khoản API nhà cung cấp HĐĐT riêng" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFBF1;strokeColor=#14B8A6;fontColor=#0F766E;fontSize=11;align=left;spacingLeft=10;arcSize=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="685" y="470" width="265" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_khach_hang" value="🤝 Danh Sách Khách Hàng Tại Cửa Hàng&#xa;• Họ tên, SĐT, CCCD, Lịch sử mua hàng tại tiệm&#xa;• Phân loại khách quen / Khách VIP của CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=11;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="685" y="565" width="265" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_nha_cung_cap" value="🏭 Thợ Gia Công &amp; Chành Vàng Của CN&#xa;• Quản lý thợ gia công riêng tại địa phương&#xa;• Đối soát công nợ tiền công / tiền vàng thợ riêng" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=11;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="685" y="635" width="265" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_dia_chi_cn" value="📍 Thông Tin Địa Điểm Kinh Doanh&#xa;• Tên chi nhánh, Địa chỉ in trên hóa đơn bán lẻ&#xa;• Số điện thoại hotline &amp; Zalo OA của tiệm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=11;align=left;spacingLeft=10;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="685" y="710" width="265" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="c5_chinh_sach_cn" value="🎯 Chính Sách Ưu Đãi Riêng Của Tiệm&#xa;• Khuyến mãi, giảm giá tiền công cục bộ tại CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="685" y="785" width="265" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="grp_stock_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;strokeColor=#FCD34D;arcSize=8;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="985" y="410" width="295" height="455" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_stock" value="📦 4. KHO VÀNG &amp; IN TEM THEO NHÓM CHUNG" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B45309;strokeColor=#92400E;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="425" width="265" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="i1_hang_hoa" value="💎 Tồn Kho Nữ Trang Theo Nhóm Hàng Chuẩn&#xa;• Mã tem số (Barcode / RFID) riêng của tiệm&#xa;• Gắn đúng Nhóm Hàng Dùng Chung của Hệ Thống&#xa;• TL Tổng (TLT), TL Đá (TLH), TL Vàng (TLV), Tiền công" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="470" width="265" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="i2_in_tem" value="🏷️ In Tem Mã Vạch Nữ Trang Tại Cửa Hàng&#xa;• In tem nhãn theo đúng Nhóm hàng &amp; Loại vàng chuẩn&#xa;• Kết nối máy in mã vạch chuyên dụng tại tiệm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="555" width="265" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="i3_nhap_kho" value="📥 Nhập Kho Chi Nhánh&#xa;• Nhập mới từ thợ / Nhận điều chuyển từ tổng&#xa;• Nhập vàng cũ thu mua vào kho rã của CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="625" width="265" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="i4_xuat_dieu_chuyen" value="🔄 Xuất Kho &amp; Điều Chuyển Hàng&#xa;• Chuyển vàng giữa các quầy trong tiệm&#xa;• Xuất điều chuyển sang CN khác / Trả tổng" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="695" width="265" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="i5_kiem_ke" value="🔍 Kiểm Kê Kho Vàng Thực Tế Tại Tiệm&#xa;• Quét Barcode/RFID đối soát tem theo Nhóm hàng&#xa;• Cân lại tổng trọng lượng &amp; xử lý lệch kho" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="765" width="265" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="grp_pos_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#6EE7B7;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1300" y="410" width="300" height="455" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_pos" value="🛒 5. POS &amp; BÁO CÁO DÙNG RIÊNG CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#047857;strokeColor=#065F46;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="425" width="270" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1_ban_hang" value="💵 Bán Lẻ Áp Giá Vàng Chung Toàn Hệ Thống&#xa;• Quét tem: [Giá Vàng Bán Chung x TLV] + Tiền công&#xa;• Tự động bốc Giá Bán từ Bảng Giá Vàng Chung Tổng Cty" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A7F3D0;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="470" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2_mua_thu_doi" value="🔁 Thu Đổi Vàng Cũ Theo Giá Mua Chung&#xa;• Tự động áp Giá Mua từ Bảng Giá Vàng Chung Tổng Cty&#xa;• Bù trừ trực tiếp: Mua vàng cũ - Bán vàng mới" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A7F3D0;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="535" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_xuat_hd" value="🖨️ XUẤT HĐĐT &amp; GIẤY ĐẢM BẢO RIÊNG CN&#xa;• Ký số &amp; phát hành theo Serial HĐĐT của CN&#xa;• In Giấy đảm bảo vàng kèm mã tra cứu CQT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1FAE5;strokeColor=#10B981;fontColor=#065F46;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="600" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1_bc_ban_hang" value="📈 Báo Cáo Doanh Thu Theo Nhóm Hàng Chung&#xa;• Báo cáo doanh số bán theo Nhóm hàng chuẩn hệ thống&#xa;• Báo cáo doanh thu theo Loại vàng kinh doanh tại CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FECDD3;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="665" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="r3_bc_xnt_kho" value="📊 Báo Cáo X-N-T &amp; Lợi Nhuận Gộp Của CN&#xa;• Tồn kho vàng thực tế theo từng loại vàng của CN&#xa;• Lợi nhuận gộp nội bộ chi nhánh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FECDD3;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=10;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1315" y="730" width="270" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_br_to_user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7E22CE;strokeWidth=2;" parent="1" source="node_chi_nhanh" target="hdr_user" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_br_to_cat" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CA8A04;strokeWidth=2;" parent="1" source="node_chi_nhanh" target="hdr_cat" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_br_to_inv" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0F766E;strokeWidth=2;" parent="1" source="node_chi_nhanh" target="hdr_inv" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_br_to_stock" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B45309;strokeWidth=2;" edge="1" parent="1" source="node_chi_nhanh" target="hdr_stock">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_br_to_pos" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#047857;strokeWidth=2;" parent="1" source="node_chi_nhanh" target="hdr_pos" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ftr_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E2E8F0;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="880" width="1560" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="ftr_title" value="💡 NGUYÊN TẮC: BẢNG GIÁ VÀNG 1 GIÁ &amp; NHÓM HÀNG LÀ 1 BỘ DÙNG CHUNG TOÀN QUỐC • HÓA ĐƠN ĐIỆN TỬ DÙNG RIÊNG THEO CHI NHÁNH (PMV)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#0F172A;fontSize=12;fontStyle=1;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="890" width="1250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="ftr_desc1" value="• TẦNG TRÊN (DÙNG CHUNG): Bảng Giá Vàng (Giá Mua &amp; Giá Bán) và Danh Mục Nhóm Hàng (Nhẫn, Dây chuyền, Kiềng, Lắc, Bông tai...) được Tổng Công Ty quản lý tập trung và áp dụng duy nhất 1 BỘ CHUNG cho tất cả chi nhánh. Cùng với Đơn vị tính chuẩn và Báo cáo hợp nhất toàn quốc.&#xa;• TẦNG DƯỚI (DÙNG RIÊNG): Hóa Đơn Điện Tử hoàn toàn riêng biệt theo từng Chi nhánh (MST riêng, Serial riêng 1C26TCNx, Chữ ký số riêng của CN)." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#475569;fontSize=11;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="915" width="760" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="ftr_desc2" value="• POS Tự Động: Khi thu ngân quét mã tem tại bất kỳ Chi nhánh nào $\rightarrow$ Tự động bốc Giá Vàng chung từ Tổng Cty &amp; Nhóm hàng chung để tính tiền + Ký phát hành HĐĐT theo Serial riêng của Chi nhánh đó.&#xa;• Cô lập dữ liệu: Dữ liệu Khách hàng, Tồn kho vàng và Sổ quỹ tiền mặt của chi nhánh nào hoàn toàn biệt lập tại chi nhánh đó." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#475569;fontSize=11;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="915" width="740" height="55" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="2. Phân Quyền Hệ Thống vs Chi Nhánh" id="pmv-rbac-architecture">
+        <mxGraphModel dx="1828" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F8FAFC" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="rb_banner" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E1B4B;strokeColor=#312E81;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="1560" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="rb_title" value="MÔ HÌNH DỮ LIỆU VÀ PHÂN QUYỀN: BẢNG GIÁ VÀNG (1 GIÁ) &amp; NHÓM HÀNG DÙNG CHUNG • HĐĐT DÙNG RIÊNG THEO CHI NHÁNH" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#EEF2FF;fontSize=16.5;fontStyle=1;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="27" width="1520" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="rb_sub" value="Kiến trúc Quản trị Tập trung: Giá vàng 1 giá, Nhóm hàng dùng chung &amp; ĐVT toàn quốc • HĐĐT, Kho hàng &amp; Quỹ tiền dùng riêng từng Chi nhánh" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#A5B4FC;fontSize=11;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="55" width="1520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_sys_scope" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#4338CA;strokeWidth=2;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="480" height="675" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_sys_scope" value="🌐 1. THÀNH PHẦN DÙNG CHUNG (SYSTEM SCOPE)&#xa;Phạm vi tác động: Toàn bộ hệ thống, áp dụng chung cho tất cả chi nhánh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3730A3;strokeColor=#312E81;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="115" width="450" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_sys_roles" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF2FF;strokeColor=#C7D2FE;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="175" width="450" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl_sys_roles" value="👑 VAI TRÒ DÙNG CHUNG (SYSTEM ROLES) - [branch_id = NULL]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3730A3;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="185" width="420" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_sys_admin" value="• SUPER_ADMIN: Toàn quyền cao nhất, quản trị danh sách chi nhánh, xem log hệ thống.&#xa;• HQ_DIRECTOR (Ban Giám Đốc Tổng): Xem báo cáo hợp nhất, quản lý niêm yết BẢNG GIÁ VÀNG CHUNG toàn quốc, quản lý danh mục NHÓM HÀNG CHUNG.&#xa;• HQ_ACCOUNTANT (Kế Toán Tổng): Báo cáo tài chính hợp nhất, quyết toán thuế, đối soát công nợ liên chi nhánh.&#xa;• HQ_SYSTEM_ADMIN: Cấu hình đơn vị tính chuẩn &amp; mẫu bộ từ điển kim hoàn dùng chung." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#1E1B4B;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="212" width="420" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_sys_perms" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF2FF;strokeColor=#C7D2FE;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="390" width="450" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl_sys_perms" value="🔑 QUYỀN DÙNG CHUNG (SYSTEM PERMISSIONS) - [Scope: SYSTEM]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3730A3;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="400" width="420" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_sys_list" value="Quản trị Bảng Giá Vàng &amp; Nhóm Hàng Dùng Chung:&#xa;  + SYS_GOLD_PRICE_MANAGE (Cập nhật Bảng Giá Vàng dùng chung 1 giá)&#xa;  + SYS_ITEM_CATEGORY_MANAGE (Quản lý cây Danh mục Nhóm Hàng dùng chung)&#xa;  + SYS_BRANCH_CREATE / EDIT / LOCK&#xa;&#xa;Đơn Vị Tính &amp; Quy Chuẩn Dùng Chung:&#xa;  + SYS_UNIT_MANAGE (Cây, Chỉ, Phân, Ly, Gam, Carat)&#xa;  + SYS_GOLD_PURITY_STANDARD (Quy chuẩn tuổi vàng TT22)&#xa;&#xa;Quản trị Phân quyền Tổng:&#xa;  + SYS_USER_MANAGE (Tạo tài khoản Quản trị, Giám đốc CN)&#xa;  + SYS_ROLE_PERMISSION_ASSIGN (Gán quyền cho role hệ thống)&#xa;&#xa;Báo cáo Hợp Nhất Toàn Quốc:&#xa;  + SYS_REPORT_CONSOLIDATED_VIEW (Xem doanh thu theo Nhóm hàng toàn quốc)&#xa;  + SYS_AUDIT_LOG_VIEW (Xem lịch sử vết toàn hệ thống)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#1E1B4B;fontSize=10.5;fontFamily=Consolas, Segoe UI;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="425" width="420" height="325" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_br_scope" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#0284C7;strokeWidth=2;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="545" y="100" width="480" height="675" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_br_scope" value="🏬 2. THÀNH PHẦN DÙNG RIÊNG (BRANCH SCOPE)&#xa;Phạm vi tác động: Chỉ có hiệu lực nội bộ tại Chi nhánh [branch_id = X]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;fontColor=#FFFFFF;fontStyle=1;fontSize=12;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="115" width="450" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_br_roles" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F9FF;strokeColor=#BAE6FD;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="175" width="450" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl_br_roles" value="👥 VAI TRÒ DÙNG RIÊNG (BRANCH ROLES) - [branch_id = cụ thể]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#0369A1;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="575" y="185" width="420" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_br_list" value="• BRANCH_MANAGER (Cửa hàng trưởng): Quản lý Loại Vàng bán tại CN, cấu hình HĐĐT chi nhánh, duyệt chiết khấu, duyệt hủy đơn.&#xa;• CASHIER (Thu ngân quầy): Bán lẻ &amp; thu đổi theo Giá Vàng Chung, ký phát hành HĐĐT của CN, quản lý két tiền quầy.&#xa;• INVENTORY_STAFF (Thủ kho): Nhập/xuất, in tem nữ trang theo Nhóm hàng chung/Loại vàng của CN, kiểm kê kho vàng tiệm.&#xa;• ACCOUNTANT_BRANCH (Kế toán CN): Báo cáo thuế chi nhánh, đối soát HĐĐT &amp; sổ quỹ chi nhánh." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#0C4A6E;fontSize=10.5;" parent="1" vertex="1">
+                    <mxGeometry x="575" y="212" width="420" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_br_perms" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F9FF;strokeColor=#BAE6FD;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="390" width="450" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl_br_perms" value="🔑 QUYỀN DÙNG RIÊNG (BRANCH PERMISSIONS) - [Scope: BRANCH]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#0369A1;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="575" y="400" width="420" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_br_list" value="Loại Vàng Kinh Doanh Tại CN:&#xa;  + BR_GOLD_TYPE_CONFIG (Cấu hình loại vàng bán tại CN)&#xa;&#xa;HĐĐT &amp; Giao dịch POS Dùng Riêng:&#xa;  + BR_EINVOICE_CONFIG (Cài đặt Serial, MST, Token ký số riêng CN)&#xa;  + BR_EINVOICE_ISSUE (Ký số &amp; phát hành HĐĐT của CN)&#xa;  + BR_INVOICE_CREATE / PRINT (Bán lẻ áp Giá Vàng Chung Tổng)&#xa;  + BR_BUY_OLD_GOLD (Thu mua, thu đổi áp Giá Mua Chung Tổng)&#xa;&#xa;Kho &amp; Mã Vạch Nữ Trang Dùng Riêng:&#xa;  + BR_STOCK_IMPORT / EXPORT / TRANSFER (Kho riêng của CN)&#xa;  + BR_BARCODE_PRINT (In tem theo Nhóm hàng chung/Loại vàng của CN)&#xa;  + BR_INVENTORY_CHECK (Quét kiểm kê kho vàng tiệm)&#xa;&#xa;Quỹ &amp; Báo cáo Nội Bộ Dùng Riêng:&#xa;  + BR_CASH_FUND_MANAGE (Mở/kết ca két tiền quầy)&#xa;  + BR_REPORT_VIEW (Báo cáo theo Nhóm hàng chung/Loại vàng CN)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#0C4A6E;fontSize=10" parent="1" vertex="1">
+                    <mxGeometry x="575" y="425" width="420" height="325" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_db_schema" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#059669;strokeWidth=2;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1050" y="100" width="550" height="675" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_db_schema" value="💾 3. DATABASE ERD: GIÁ VÀNG &amp; NHÓM HÀNG CHUNG • HĐĐT RIÊNG" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#059669;strokeColor=#047857;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1065" y="115" width="520" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="tbl_units_sys" value="🌐 BẢNG DÙNG CHUNG: tbl_units (ĐƠN VỊ TÍNH CHUẨN)&#xa;• id (PK), code (&#39;CAY&#39;, &#39;CHI&#39;, &#39;PHAN&#39;, &#39;LY&#39;, &#39;GAM&#39;, &#39;CARAT&#39;)&#xa;• name (&#39;Cây vàng&#39;, &#39;Chỉ vàng&#39;, &#39;Phân&#39;, &#39;Ly&#39;, &#39;Gram&#39;)&#xa;• convert_to_gram (37.5, 3.75, 0.375, 0.0375, 1.0, 0.2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#93C5FD;fontColor=#1E40AF;fontSize=10;align=left;spacingLeft=10;fontFamily=Consolas, Segoe UI;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="170" width="520" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="tbl_gold_prices_sys" value="🌐 BẢNG DÙNG CHUNG: tbl_gold_prices (BẢNG GIÁ VÀNG 1 GIÁ TOÀN QUỐC)&#xa;• id (PK), gold_code (&#39;9999&#39;, &#39;24K&#39;, &#39;18K&#39;, &#39;Y_750&#39;, &#39;610&#39;, &#39;10K&#39;, &#39;SJC&#39;)&#xa;• gold_name (&#39;Vàng 9999&#39;, &#39;Vàng 18K&#39;, &#39;Vàng Ý 750&#39;)&#xa;• buy_price (Giá Mua vào chung toàn quốc)&#xa;• sell_price (Giá Bán ra chung toàn quốc)&#xa;• updated_at, updated_by (Tổng Cty cập nhật $\rightarrow$ Tất cả CN dùng chung)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF9C3;strokeColor=#EAB308;fontColor=#854D0E;fontSize=10;align=left;spacingLeft=10;fontFamily=Consolas, Segoe UI;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="245" width="520" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="tbl_categories_sys" value="🌐 BẢNG DÙNG CHUNG: tbl_item_categories (1 BỘ NHÓM HÀNG DUY NHẤT)&#xa;• id (PK), code (&#39;NHAN&#39;, &#39;DAY_CHUYEN&#39;, &#39;KIENG&#39;, &#39;LAC&#39;, &#39;BONG_TAI&#39;, &#39;MIENG_SJC&#39;)&#xa;• name (&#39;Nhẫn nữ trang&#39;, &#39;Dây chuyền&#39;, &#39;Kiềng cổ&#39;, &#39;Lắc tay&#39;, &#39;Bông tai&#39;)&#xa;• [Tổng Công Ty quản lý $\rightarrow$ Tất cả chi nhánh dùng chung 1 cây danh mục]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#10B981;fontColor=#064E3B;fontSize=10;align=left;spacingLeft=10;fontFamily=Consolas, Segoe UI;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="330" width="520" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="tbl_branches" value="🏬 BẢNG DÙNG RIÊNG: tbl_branches (HĐĐT RIÊNG TỪNG CN)&#xa;• id (PK), code (CN01, CN02), name, address&#xa;• tax_code (MST chi nhánh riêng), einvoice_serial (1C26TCN1 riêng)&#xa;• einvoice_account, einvoice_password, hsm_cert_alias (Chữ ký số riêng)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFBF1;strokeColor=#14B8A6;fontColor=#0F766E;fontSize=10;align=left;spacingLeft=10;fontFamily=Consolas, Segoe UI;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="415" width="520" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="tbl_branch_invoices" value="🛒 BẢNG DÙNG RIÊNG: tbl_stocks &amp; tbl_invoices (KHO &amp; BÁN HÀNG RIÊNG CN)&#xa;• stock_id (PK), branch_id (FK), category_id (FK tbl_item_categories), gold_code (FK)&#xa;• barcode, weight_total, weight_gold, wage_amount, unit_id (FK)&#xa;• invoice_id (PK), branch_id (FK), einvoice_serial, gold_price_applied" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEE2E2;strokeColor=#FCA5A5;fontColor=#7F1D1D;fontSize=10;align=left;spacingLeft=10;fontFamily=Consolas, Segoe UI;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="495" width="520" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="tbl_account_branch_roles" value="⭐ BẢNG GÁN VAI TRÒ: tbl_account_branch_roles&#xa;• account_id (FK), branch_id (FK, NULL nếu role Tổng), role_id (FK), counter_id (FK)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE9FE;strokeColor=#C4B5FD;fontColor=#5B21B6;fontSize=10;align=left;spacingLeft=10;fontFamily=Consolas, Segoe UI;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1065" y="580" width="520" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="box_auth_check" value="🛡️ LUỒNG DỮ LIỆU TỰ ĐỘNG TẠI CHI NHÁNH&#xa;1. Tạo Hàng Hóa: Chọn Nhóm Hàng DÙNG CHUNG &amp; Loại Vàng kinh doanh tại CN.&#xa;2. In Tem Mã Vạch: Tem in đúng Nhóm hàng chuẩn, Tuổi vàng &amp; TL theo cấu hình.&#xa;3. Bán Hàng POS: Quét tem $\rightarrow$ Bốc Giá Vàng Bán DÙNG CHUNG từ Tổng Cty $\rightarrow$ Tính thành tiền.&#xa;4. Ký Số HĐĐT: Phát hành theo Serial `1C26TCNx` và Chữ ký số riêng của CN." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#94A3B8;fontColor=#0F172A;fontSize=10;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="1065" y="635" width="520" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="rb_ftr" value="📌 NGUYÊN TẮC: BẢNG GIÁ VÀNG (1 GIÁ) &amp; DANH MỤC NHÓM HÀNG LÀ TÀI NGUYÊN DÙNG CHUNG TOÀN HỆ THỐNG (Tổng Cty cập nhật). Hóa Đơn Điện Tử, Kho Vàng và Sổ Quỹ là tài nguyên DÙNG RIÊNG có khóa ngoại `branch_id` thuộc từng chi nhánh." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF2F2;strokeColor=#FECACA;fontColor=#991B1B;fontSize=11;fontStyle=1;align=left;spacingLeft=15;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="790" width="1560" height="45" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="3. Sơ Đồ Chi Tiết 1 Chi Nhánh" id="pmv-single-branch-architecture">
+        <mxGraphModel dx="1828" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F8FAFC" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="br_banner_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F172A;strokeColor=#1E293B;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="1560" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="br_banner_title" value="🏬 KIẾN TRÚC VÀ QUY TRÌNH VẬN HÀNH NỘI BỘ 1 CHI NHÁNH (SINGLE BRANCH ARCHITECTURE)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F8FAFC;fontSize=17;fontStyle=1;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="27" width="1520" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="br_banner_sub" value="VÍ DỤ: CHI NHÁNH 01 (MÃ: CN01 • MST RIÊNG: 0101234567-001 • SERIAL HĐĐT: 1C26TCN1 • CHỮ KÝ SỐ HSM / TOKEN RIÊNG TẠI CỬA HÀNG)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#38BDF8;fontSize=11;fontStyle=1;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="55" width="1520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="hq_sync_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F9FF;strokeColor=#0284C7;strokeWidth=2;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="1560" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="hq_sync_hdr" value="🌐 1. CỔNG TIẾP NHẬN DỮ LIỆU DÙNG CHUNG TỪ TỔNG CÔNG TY (HEADQUARTERS DATA SYNC)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=4;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="108" width="1530" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="hq_s1_price" value="📊 BẢNG GIÁ VÀNG DÙNG CHUNG (1 GIÁ)&#xa;• Nhận real-time Giá Mua &amp; Giá Bán từ Tổng Cty&#xa;• Bắn tự động ra màn hình LED sảnh cửa hàng&#xa;• Tự động nạp vào máy tính tiền POS tại quầy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF9C3;strokeColor=#EAB308;fontColor=#713F12;fontSize=10.5;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="137" width="490" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hq_s2_cat" value="🏷️ DANH MỤC NHÓM HÀNG DÙNG CHUNG (1 BỘ DUY NHẤT)&#xa;• Nhận toàn bộ cây Nhóm Hàng chuẩn: Nhẫn, Dây, Kiềng, Lắc, Bông tai...&#xa;• Chi nhánh dùng chung mã để phân loại hàng hóa &amp; in tem TT22" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#10B981;fontColor=#064E3B;fontSize=10.5;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="575" y="137" width="490" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="hq_s3_unit" value="⚖️ ĐƠN VỊ TÍNH &amp; QUY CHUẨN TUỔI VÀNG TT22&#xa;• Bộ quy đổi ĐVT chuẩn: Cây, Chỉ, Phân, Ly, Gam, Carat&#xa;• Hàm lượng vàng tối thiểu theo TT22 (9999, 18K, Ý 750, 610, 10K)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#93C5FD;fontColor=#1E40AF;fontSize=10.5;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="1095" y="137" width="490" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF5FF;strokeColor=#C084FC;strokeWidth=1.5;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="210" width="375" height="615" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_hdr" value="👤 1. NHÂN SỰ, QUẦY &amp; KÉT TIỀN CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7E22CE;strokeColor=#6B21A8;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="222" width="345" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_b1_user" value="👥 Nhân Sự &amp; Ca Làm Việc Tại Tiệm:&#xa;• Cửa hàng trưởng: Giám sát toàn bộ hoạt động tiệm, duyệt chiết khấu &amp; hủy đơn.&#xa;• Thu ngân quầy: Đăng nhập theo ca, chịu trách nhiệm két tiền quầy.&#xa;• Thủ kho tiệm: Nhập/xuất, in tem nhãn, kiểm kê kho." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="262" width="345" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_b2_counters" value="🎯 Quản Trị Quầy Bán Hàng (Counters):&#xa;• Quầy 1: Nữ trang Vàng 9999 &amp; Vàng Miếng SJC.&#xa;• Quầy 2: Nữ trang Vàng Tây 18K / Ý 750 / Vàng Trắng.&#xa;• Quầy 3: Quầy Thu Mua / Thu Đổi Vàng Cũ.&#xa;• Phân quyền nhân viên và két tiền riêng từng quầy." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="370" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_b3_fund" value="💰 Két Tiền Quầy &amp; Tài Khoản Ngân Hàng CN:&#xa;• Quỹ tiền mặt đầu ca: Bàn giao tiền mặt đầu ngày.&#xa;• Thu/Chi trong ca: Tiền bán hàng, tiền chi thu mua vàng cũ.&#xa;• STK Ngân Hàng / Mã VietQR nhận tiền chuyển khoản riêng của Chi nhánh $\rightarrow$ Tự động khớp bill." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="483" width="345" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_b4_partner" value="🤝 Khách Hàng &amp; Thợ Kim Hoàn Của CN:&#xa;• Danh bạ khách quen, khách VIP tại địa bàn tiệm.&#xa;• Thợ chế tác, gia công và thợ sỉ làm việc trực tiếp với tiệm.&#xa;• Theo dõi công nợ tiền công &amp; tiền vàng với thợ gia công." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="601" width="345" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1_b5_log" value="📝 Nhật Ký Hoạt Động Cửa Hàng:&#xa;• Lịch sử đăng nhập, mở két, bán hàng, thu đổi nội bộ tiệm." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D8B4FE;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="704" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;strokeColor=#FCD34D;strokeWidth=1.5;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="435" y="210" width="375" height="615" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_hdr" value="📦 2. KHO NỮ TRANG, IN TEM &amp; KIỂM KÊ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B45309;strokeColor=#92400E;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="222" width="345" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_b1_import" value="📥 Nhập Hàng Hóa Vào Kho Chi Nhánh:&#xa;• Nhập mới từ Thợ gia công / Chành vàng địa phương.&#xa;• Nhận hàng điều chuyển từ Kho Tổng Cty hoặc CN khác.&#xa;• Nhập vàng cũ từ các đơn thu mua tại quầy vào Kho Rã." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="262" width="345" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_b2_tag_info" value="🏷️ Khai Báo Thông Số Món Hàng (Chuẩn TT22):&#xa;• Chọn Nhóm Hàng DÙNG CHUNG (Nhẫn cưới, Kiềng, Lắc...).&#xa;• Chọn Loại Vàng kinh doanh tại tiệm (9999, 18K, Ý 750, 610...).&#xa;• Cân 4 thông số: Tổng TL (TLT), TL Đá/Hột (TLH), TL Vàng thực tế (TLV), Tiền công món hàng." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF08A;strokeColor=#EAB308;fontColor=#713F12;fontSize=10.5;align=left;spacingLeft=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="370" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_b3_print_barcode" value="🖨️ In Tem Mã Vạch / Gắn Chip RFID Tại Tiệm:&#xa;• Sinh Mã Tem Số (Barcode/QR code) độc nhất từng món.&#xa;• In nhãn tem đuôi kim hoàn chuẩn Thông tư 22: Thể hiện rõ Tên hàng, Tuổi vàng, TLV, Tiền công, Tên tiệm.&#xa;• Dán tem trực tiếp lên món trang sức." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="483" width="345" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_b4_distribute" value="🔄 Phân Bổ Tủ Quầy &amp; Điều Chuyển Hàng:&#xa;• Xuất hàng từ Kho tổng tiệm ra Tủ Quầy 1, Quầy 2 trưng bày.&#xa;• Xuất điều chuyển hỗ trợ hàng sang Chi nhánh khác.&#xa;• Trả hàng lỗi về Xưởng thợ gia công." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="601" width="345" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2_b5_stock_check" value="🔍 Quét Kiểm Kê Kho Quầy Định Kỳ:&#xa;• Dùng súng quét không dây / RFID quét toàn bộ tủ quầy.&#xa;• Đối soát tồn thực tế vs phần mềm $\rightarrow$ Báo lệch thừa/thiếu." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FDE68A;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="704" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECFDF5;strokeColor=#6EE7B7;strokeWidth=1.5;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="210" width="375" height="615" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3_hdr" value="🛒 3. BÁN LẺ POS &amp; THU MUA THU ĐỔI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#047857;strokeColor=#065F46;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="845" y="222" width="345" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3_b1_pos_sale" value="💵 Bán Lẻ Nữ Trang (Quét Mã Tem Số):&#xa;• Thu ngân quét tem món hàng tại quầy.&#xa;• Tự động bốc GIÁ VÀNG BÁN CHUNG từ Tổng Cty.&#xa;• Công thức tính:&#xa;  Tổng tiền = (TLV x Giá Vàng Bán Chung) + Tiền công - CK&#xa;• Hàng tự động trừ tồn kho quầy ngay lập tức." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1FAE5;strokeColor=#10B981;fontColor=#064E3B;fontSize=10.5;align=left;spacingLeft=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="845" y="262" width="345" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3_b2_buy_back" value="🔁 Thu Mua Vàng Cũ (Áp Giá Mua Chung):&#xa;• Cân trọng lượng vàng cũ của khách (TLV cũ).&#xa;• Thử tuổi vàng $\rightarrow$ Chọn loại vàng tương ứng.&#xa;• Tự động bốc GIÁ VÀNG MUA CHUNG từ Tổng Cty.&#xa;• Tiền trả khách = TLV cũ x Giá Vàng Mua Chung." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A7F3D0;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="845" y="370" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3_b3_trade_in" value="🔄 Giao Dịch Thu Đổi Vàng (Bù Trừ Trực Tiếp):&#xa;• Đổi món vàng cũ lấy món nữ trang mới trên cùng 1 đơn.&#xa;• Tiền thanh toán = Tiền Món Mới - Tiền Vàng Cũ Thu Mua.&#xa;• Khách thanh toán chênh lệch hoặc tiệm chi hoàn tiền." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A7F3D0;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="845" y="483" width="345" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3_b4_payment" value="💳 Thu Tiền Thanh Toán Đa Kênh:&#xa;• Tiền mặt: Bỏ trực tiếp vào Két tiền quầy.&#xa;• Chuyển khoản QR: Khách quét VietQR động $\rightarrow$ Webhook báo tiền về tài khoản ngân hàng của Chi nhánh.&#xa;• Quẹt thẻ POS ngân hàng liên kết tại tiệm." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A7F3D0;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="845" y="601" width="345" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3_b5_print_doc" value="🖨️ In Giấy Đảm Bảo Vàng Kèm Hóa Đơn:&#xa;• In Giấy đảm bảo vàng (thông số tuổi, TLV, tiền công, logo tiệm).&#xa;• In mã QR tra cứu Hóa Đơn Điện Tử của Chi nhánh." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A7F3D0;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="845" y="704" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FDFA;strokeColor=#5EEAD4;strokeWidth=1.5;arcSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1225" y="210" width="375" height="615" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_hdr" value="🧾 4. HĐĐT &amp; BÁO CÁO NỘI BỘ CN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F766E;strokeColor=#115E59;fontColor=#FFFFFF;fontStyle=1;fontSize=11.5;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1240" y="222" width="345" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_b1_einvoice_cfg" value="🧾 Cấu Hình HĐĐT Riêng Biệt 100% Của CN:&#xa;• Nhà cung cấp HĐĐT riêng: VNPT / Viettel / MISA...&#xa;• MST Chi nhánh: 10 số hoặc 13 số riêng (`0101234567-001`).&#xa;• Ký hiệu Hóa đơn riêng: Serial `1C26TCN1` (CN01), `1C26TCN2`...&#xa;• Chữ ký số riêng: USB Token cắm máy POS hoặc HSM Cloud." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCFBF1;strokeColor=#14B8A6;fontColor=#0F766E;fontSize=10.5;align=left;spacingLeft=8;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1240" y="262" width="345" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_b2_issue" value="🔏 Tự Động Ký Số &amp; Phát Hành HĐĐT:&#xa;• Khi POS chốt đơn $\rightarrow$ Hệ thống tự động ký số bằng Chứng thư số của CN.&#xa;• Truyền dữ liệu hóa đơn trực tiếp lên Cơ quan Thuế.&#xa;• Nhận Mã CQT cấp và gửi link hóa đơn qua SMS/Zalo khách." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1240" y="370" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_b3_fund_report" value="📊 Báo Cáo Sổ Quỹ Tiền Mặt &amp; Chốt Ca:&#xa;• Báo cáo tổng thu / tổng chi / tồn két tiền quầy cuối ngày.&#xa;• Đối soát chuyển khoản ngân hàng QR vs thực thu POS.&#xa;• Bàn giao quỹ két tiền mặt khi kết thúc ca làm việc." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1240" y="483" width="345" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_b4_sales_report" value="📈 Báo Cáo Doanh Thu Theo Nhóm Hàng &amp; Vàng:&#xa;• Báo cáo doanh số bán theo từng Nhóm Hàng Chuẩn Hệ Thống.&#xa;• Báo cáo doanh số theo từng Loại Vàng kinh doanh tại CN.&#xa;• Lợi nhuận gộp nội bộ của Chi nhánh (Doanh thu - Giá vốn)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1240" y="601" width="345" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4_b5_stock_report" value="📦 Báo Cáo Xuất - Nhập - Tồn Kho Tiệm:&#xa;• Báo cáo tồn kho nữ trang thực tế theo từng Tủ Quầy.&#xa;• Báo cáo tổng TLV, TLH, Tiền công đang trưng bày tại tiệm." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#99F6E4;fontColor=#1E293B;fontSize=10.5;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1240" y="704" width="345" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F172A;strokeColor=#1E293B;arcSize=6;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="845" width="1560" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_title" value="⚡ QUY TRÌNH VẬN HÀNH 6 BƯỚC KHÉP KÍN TẠI 1 CỬA HÀNG CHI NHÁNH (PMV WORKFLOW)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F8FAFC;fontSize=12;fontStyle=1;fontFamily=Segoe UI, Arial;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="853" width="1200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_step_1" value="Bước 1: Nhập Kho &amp; Cân Hàng&#xa;• Cân 4 thông số: TLT, TLH, TLV, Công&#xa;• Gắn Nhóm Hàng &amp; Loại Vàng" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#38BDF8;fontColor=#F8FAFC;fontSize=10.5;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="880" width="235" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_step_2" value="Bước 2: In Tem TT22 &amp; Trưng Bày&#xa;• In tem mã vạch Barcode/RFID&#xa;• Phân bổ vào Tủ Quầy 1, Quầy 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#38BDF8;fontColor=#F8FAFC;fontSize=10.5;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="315" y="880" width="235" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_step_3" value="Bước 3: POS Bán Lẻ Tại Quầy&#xa;• Quét tem $\rightarrow$ Bốc Giá Vàng Bán Chung&#xa;• Tính thành tiền = (TLV x Giá Bán) + Công" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#38BDF8;fontColor=#F8FAFC;fontSize=10.5;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="880" width="235" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_step_4" value="Bước 4: Thu Đổi / Bù Trừ Vàng Cũ&#xa;• Cân vàng cũ $\rightarrow$ Áp Giá Vàng Mua Chung&#xa;• Bù trừ trực tiếp trên hóa đơn POS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#38BDF8;fontColor=#F8FAFC;fontSize=10.5;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="825" y="880" width="235" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_step_5" value="Bước 5: Ký HĐĐT &amp; In Giấy Đảm Bảo&#xa;• Ký số HSM/Token theo Serial riêng CN&#xa;• In Giấy đảm bảo vàng giao khách" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#38BDF8;fontColor=#F8FAFC;fontSize=10.5;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="880" width="235" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="wf_step_6" value="Bước 6: Chốt Két &amp; Báo Cáo CN&#xa;• Chốt tiền mặt két quầy, khớp QR STK&#xa;• Báo cáo doanh thu &amp; Tồn kho cuối ngày" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#38BDF8;fontColor=#F8FAFC;fontSize=10.5;align=center;arcSize=6;" parent="1" vertex="1">
+                    <mxGeometry x="1335" y="880" width="245" height="85" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

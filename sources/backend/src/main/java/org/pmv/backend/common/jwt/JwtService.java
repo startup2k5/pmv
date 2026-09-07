@@ -28,7 +28,7 @@ public class JwtService {
     }
 
 
-    public String generateToken(Account account, Role role, Branch branch, List<String> permissions) {
+    public String generateToken(Account account) {
         Instant now = Instant.now();
         var builder = Jwts.builder()
                 .issuer(jwtConfig.getIssuer())                                  // iss: Bên phát hành token

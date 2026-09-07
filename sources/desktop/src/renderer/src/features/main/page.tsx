@@ -1,25 +1,30 @@
 import Sidebar from '@renderer/components/ui/layouts/Sidebar'
 import { useTitlebar } from '@renderer/lib/titlebar-context'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { DashboardView } from './views/DashboardView'
+import { PermissionTreeView } from './views/PermissionTreeView'
 import { SidebarIcon, BellIcon, GearIcon, SearchIcon } from '@renderer/assets'
+import type { User } from '@renderer/types'
 
 interface MainPageProps {
+  currentUser?: User | null
   onLogout: () => void
 }
 
-function MainPage({ onLogout }: MainPageProps): React.JSX.Element {
+function MainPage({ currentUser, onLogout }: MainPageProps): React.JSX.Element {
   const { setTitlebar } = useTitlebar()
   const [activeTab, setActiveTab] = useState('dashboard')
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isTabLoading, setIsTabLoading] = useState(false)
 
-  const handleTabChange = (tab: string): void => {
-    if (tab === activeTab) return
-    setIsTabLoading(true)
-    setActiveTab(tab)
-    window.setTimeout(() => setIsTabLoading(false), 350)
-  }
+  const handleTabChange = useCallback((tab: string): void => {
+    setActiveTab((current) => {
+      if (tab === current) return current
+      setIsTabLoading(true)
+      window.setTimeout(() => setIsTabLoading(false), 300)
+      return tab
+    })
+  }, [])
 
   useEffect(() => {
     setTitlebar(
@@ -56,21 +61,32 @@ function MainPage({ onLogout }: MainPageProps): React.JSX.Element {
           <button className="hover:bg-surface-hover rounded-sm transition flex items-center justify-center p-1">
             <BellIcon className="h-5 w-5" />
           </button>
-          <button className="hover:bg-surface-hover rounded-sm transition flex items-center justify-center p-1">
-            <GearIcon className="h-5 w-5" />
-          </button>
+          {Boolean(
+            currentUser?.roleCode === 'SYSTEM_ADMIN' || currentUser?.scope === 'SYSTEM'
+          ) && (
+            <button
+              onClick={() => handleTabChange('hr_permission_tree')}
+              title="Cấu hình cây phân quyền"
+              className={`hover:bg-surface-hover rounded-sm transition flex items-center justify-center p-1 cursor-pointer ${
+                activeTab === 'hr_permission_tree' || activeTab === 'hr_role' ? 'text-accent' : ''
+              }`}
+            >
+              <GearIcon className="h-5 w-5" />
+            </button>
+          )}
           <label className="border-l border-line h-5"></label>
         </div>
       </div>
     )
     return () => setTitlebar(null)
-  }, [setTitlebar])
+  }, [setTitlebar, activeTab, handleTabChange, currentUser])
 
   return (
     <div className="flex flex-1 overflow-hidden">
       <Sidebar
         open={sidebarOpen}
         activeTab={activeTab}
+        currentUser={currentUser}
         onTabChange={handleTabChange}
         onLogout={onLogout}
         onClose={() => setSidebarOpen(false)}
@@ -83,12 +99,20 @@ function MainPage({ onLogout }: MainPageProps): React.JSX.Element {
           </div>
         ) : (
           <>
-            {activeTab === 'dashboard' && <DashboardView />}
-            {activeTab !== 'dashboard' && (
-              <div className="flex-1 flex items-center justify-center p-8 text-content text-sm">
-                Tính năng đang được phát triển...
-              </div>
+            {(activeTab === 'dashboard' || activeTab === 'overview') && (
+              <DashboardView currentUser={currentUser} />
             )}
+            {(activeTab === 'hr_permission_tree' || activeTab === 'hr_role') && (
+              <PermissionTreeView />
+            )}
+            {activeTab !== 'dashboard' &&
+              activeTab !== 'overview' &&
+              activeTab !== 'hr_permission_tree' &&
+              activeTab !== 'hr_role' && (
+                <div className="flex-1 flex items-center justify-center p-8 text-content text-sm">
+                  Tính năng đang được phát triển...
+                </div>
+              )}
           </>
         )}
       </main>

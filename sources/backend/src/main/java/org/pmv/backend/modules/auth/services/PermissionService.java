@@ -76,21 +76,12 @@ public class PermissionService {
         return ApiResponse.Success.ok("Lay danh sach quyen thanh cong", responseList);
     }
 
-    /**
-     * Tao moi quyen (Insert)
-     */
-    @Transactional
     public ApiResponse.Success<PermissionDto.CreateResponse> create(PermissionDto.CreateRequest request) {
         String code = request.getCode().trim().toUpperCase();
         if (permissionRepository.existsByCode(code)) {
             throw new AppException(ErrorCode.PERMISSION_EXISTS);
         }
 
-        Permission permission = new Permission();
-        permission.setCode(code);
-        permission.setName(request.getName().trim());
-        permission.setScope(request.getScope() != null ? request.getScope().trim().toUpperCase() : "BRANCH");
-        permission.setAction(request.getAction() != null ? request.getAction().trim().toUpperCase() : null);
 
         if (request.getParentId() != null) {
             Permission parent = permissionRepository.findById(request.getParentId())
