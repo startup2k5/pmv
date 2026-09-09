@@ -1,24 +1,39 @@
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${SERVER_PORT}
 
 spring:
+  application:
+    name: backend
   profiles:
-    active: ${SPRING_ACTIVE_PROFILE:dev}
+    active: ${SERVER_PROFILE}
   datasource:
-    url: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DATA}
-    username: ${POSTGRES_USER}
-    password: ${POSTGRES_PASS}
+    url: jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
     hikari:
-      pool-name: GMS2026 POOL
-      connection-timeout: 30000           # 30s - Thời gian chờ lấy connection
-      idle-timeout: 600000                # 10 phút - Thời gian connection nhàn rỗi
-      max-lifetime: 1800000               # 30 phút - Tuổi thọ tối đa của connection
-      validation-timeout: 5000            # 5s - Thời gian validate connection
-      leak-detection-threshold: 60000     # 60s - Phát hiện connection bị leak
+      pool-name: data-pood
       maximum-pool-size: 20
       minimum-idle: 10
       connection-test-query: SELECT 1
+      connection-timeout: 30000
+      idle-timeout: 1800000
+      validation-timeout: 5000
+      leak-detection-threshold: 60000
+
+logging:
+  file:
+    name: logs/app.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} : %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} : %msg%n"
+  logback:
+    rollingpolicy:
+      file-name-pattern: "logs/%d{yyyy-MM-dd}.%i.log"
+      max-file-size: 10MB
+      max-history: 7
+      total-size-cap: 1GB
+
 jwt:
-  issuer: ${JWT_ISSUER}
-  expiration: ${JWT_EXPIRATION}
-  secret: ${JWT_SECRET_KEY}
+  secret: d4e1f7a8b2c5e9301467f8923a4b5c6d7e8f0123456789abcdef0123456789ab
+  issuer: pmv
+  expiration: 86400000
