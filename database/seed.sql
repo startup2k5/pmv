@@ -13,7 +13,7 @@ INSERT INTO auth.roles (fk_create_by, fk_update_by, code, name, scope, descripti
 INSERT INTO business.companies (fk_create_by, fk_update_by, name, address) VALUES ((SELECT id FROM auth.accounts WHERE username = 'sysadmin'), (SELECT id FROM auth.accounts WHERE username = 'sysadmin'), 'Công ty TNHH VÀNG BẠC', 'Viet nam');
 
 -- Khởi tạo nhân viên hệ thống
-INSERT INTO business.employees (fk_account_id, fk_branch_id, fk_role_id) VALUES ((SELECT id FROM auth.accounts WHERE username = 'sysadmin'), NULL, (SELECT id FROM auth.roles WHERE code = 'SYSTEM_ADMIN'));
+INSERT INTO business.employees (fk_account_id, fk_company_id, fk_branch_id, fk_role_id) VALUES ((SELECT id FROM auth.accounts WHERE username = 'sysadmin'), (SELECT id FROM business.companies ORDER BY id LIMIT 1), NULL, (SELECT id FROM auth.roles WHERE code = 'SYSTEM_ADMIN'));
 
 -- Khởi tạo quyền dung chung
 INSERT INTO auth.permissions (fk_create_by, fk_update_by, fk_parent_id, code, name, scope, action) VALUES ((SELECT id FROM auth.accounts WHERE username = 'sysadmin'), (SELECT id FROM auth.accounts WHERE username = 'sysadmin'), NULL, 'ALL.OVERVIEW', 'Trang tổng quan', 'ALL', 'OVERVIEW');

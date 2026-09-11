@@ -155,18 +155,24 @@ CREATE INDEX IF NOT EXISTS idx_branches_company_id ON business.branches(fk_compa
 CREATE TABLE IF NOT EXISTS business.employees (
     fk_account_id BIGINT NOT NULL,
 
+    fk_company_id BIGINT NOT NULL, -- thuoc cong ty nao
     fk_branch_id BIGINT NULL, -- thuoc chi nhanh nao, null la he thong
     fk_role_id BIGINT NULL,
 
+    scope VARCHAR(20) NOT NULL DEFAULT 'BRANCH', -- 'SYSTEM', 'BRANCH'
     is_active BOOLEAN DEFAULT TRUE,
     create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT pk_employees PRIMARY KEY (fk_account_id),
     CONSTRAINT fk_employees_account FOREIGN KEY (fk_account_id) REFERENCES auth.accounts(id) ON DELETE CASCADE,
+    CONSTRAINT fk_employees_company FOREIGN KEY (fk_company_id) REFERENCES business.companies(id) ON DELETE CASCADE,
     CONSTRAINT fk_employees_branch FOREIGN KEY (fk_branch_id) REFERENCES business.branches(id) ON DELETE CASCADE,
     CONSTRAINT fk_employees_role FOREIGN KEY (fk_role_id) REFERENCES auth.roles(id) ON DELETE SET NULL
 );
 
+CREATE INDEX IF NOT EXISTS idx_employees_company_id ON business.employees(fk_company_id);
 CREATE INDEX IF NOT EXISTS idx_employees_branch_id ON business.employees(fk_branch_id);
 CREATE INDEX IF NOT EXISTS idx_employees_role_id ON business.employees(fk_role_id);
+
+ALTER TABLE business.employees ADD COLUMN IF NOT EXISTS scope VARCHAR(20) NOT NULL DEFAULT 'BRANCH';

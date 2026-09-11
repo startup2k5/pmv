@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="windown.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:windown">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                
+                <!-- 1. BẢNG MÃ MÀU RIÊNG (Color Primitives: Hex Codes, Brand Gold, Status Colors) -->
+                <ResourceDictionary Source="ms-appx:///Common/Styles/Colors.xaml" />
+                
+                <!-- 2. HỆ THỐNG THEME RIÊNG (Theme Dictionaries: Dark / Light Mode) -->
+                <ResourceDictionary Source="ms-appx:///Common/Styles/Themes.xaml" />
+                
+                <!-- 3. BỘ STYLE CONTROLS RIÊNG (TitleBar, Buttons, Controls) -->
+                <ResourceDictionary Source="ms-appx:///Common/Styles/TitleBarStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

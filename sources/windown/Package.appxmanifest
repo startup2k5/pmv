@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:systemai="http://schemas.microsoft.com/appx/manifest/systemai/windows10"
+  IgnorableNamespaces="uap rescap systemai">
+
+  <Identity
+    Name="5ddc7140-d8d5-45dc-b1bd-aef130736b97"
+    Publisher="CN=Nguyen Minh Hung"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="5ddc7140-d8d5-45dc-b1bd-aef130736b97" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>windown</DisplayName>
+    <PublisherDisplayName>Nguyen Minh Hung</PublisherDisplayName>
+    <Logo>Resources\Logos\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26226.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26226.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="$targetentrypoint$">
+      <uap:VisualElements
+        DisplayName="Gold Business Client 2026"
+        Description="windown"
+        BackgroundColor="transparent"
+        Square150x150Logo="Resources\Logos\Square150x150Logo.png"
+        Square44x44Logo="Resources\Logos\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Resources\Logos\Wide310x150Logo.png"  Square71x71Logo="Resources\Logos\SmallTile.png" Square310x310Logo="Resources\Logos\LargeTile.png" ShortName="Gold Business Client 2026">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Resources\Logos\SplashScreen.png" />
+        <uap:LockScreen Notification="badge" BadgeLogo="Resources\Logos\BadgeLogo.png"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+    <systemai:Capability Name="systemAIModels"/>
+  </Capabilities>
+</Package>

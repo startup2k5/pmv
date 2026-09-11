@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="windown.Common.Controls.TitleBarControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="RootGrid" Height="44" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Border x:Name="DragArea" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="3" 
+                Background="Transparent" 
+                PointerPressed="DragArea_PointerPressed"
+                DoubleTapped="DragArea_DoubleTapped" />
+
+        <!-- Cột 0: Nút thu gọn/mở rộng Menu với style riêng -->
+        <Button x:Name="NavToggleBtn"
+                Grid.Column="0"
+                Style="{StaticResource TitleBarNavToggleButtonStyle}"
+                Margin="4,0,4,0"
+                Click="NavToggleBtn_Click"
+                Visibility="Collapsed"
+                ToolTipService.ToolTip="Mở rộng / Thu gọn Menu">
+            <FontIcon Glyph="&#xE700;" FontSize="14" />
+        </Button>
+
+        <!-- Cột 1: Logo ứng dụng -->
+        <Image x:Name="AppLogo"
+               Grid.Column="1"
+               Source="ms-appx:///Resources/Logos/Square44x44Logo.png"
+               Width="20"
+               Height="20"
+               Margin="8,0,10,0"
+               VerticalAlignment="Center"
+               IsHitTestVisible="False" />
+
+        <!-- Cột 2: Tên ứng dụng & Chi nhánh -->
+        <StackPanel Grid.Column="2" 
+                    Orientation="Horizontal" 
+                    VerticalAlignment="Center" 
+                    Spacing="8"
+                    IsHitTestVisible="False">
+            <TextBlock x:Name="TitleText"
+                       Text="Gold Business Client 2026"
+                       Style="{ThemeResource CaptionTextBlockStyle}"
+                       FontWeight="SemiBold"
+                       VerticalAlignment="Center" />
+
+            <Border Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                    CornerRadius="4"
+                    Padding="6,2"
+                    VerticalAlignment="Center">
+                <TextBlock x:Name="BranchText"
+                           Text="Chi nhánh Trung tâm"
+                           FontSize="11"
+                           Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+            </Border>
+        </StackPanel>
+
+
+        <!-- Cột 5: 3 NÚT HỆ THỐNG ÁP DỤNG BỘ STYLE HOVER RIÊNG CHUẨN XỊN -->
+        <StackPanel Grid.Column="5" Orientation="Horizontal" VerticalAlignment="Stretch">
+            <!-- Nút Thu Nhỏ (Minimize) -->
+            <Button x:Name="MinimizeBtn"
+                    Style="{StaticResource TitleBarCaptionButtonStyle}"
+                    Click="MinimizeBtn_Click"
+                    ToolTipService.ToolTip="Thu nhỏ">
+                <FontIcon Glyph="&#xE921;" FontSize="10" />
+            </Button>
+
+            <!-- Nút Phóng To / Khôi Phục (Maximize / Restore) -->
+            <Button x:Name="MaximizeBtn"
+                    Style="{StaticResource TitleBarCaptionButtonStyle}"
+                    Click="MaximizeBtn_Click"
+                    ToolTipService.ToolTip="Phóng to">
+                <FontIcon x:Name="MaximizeIcon" Glyph="&#xE922;" FontSize="10" />
+            </Button>
+
+            <!-- Nút Đóng (Close) với Style Hover Đỏ Rực #E81123 -->
+            <Button x:Name="CloseBtn"
+                    Style="{StaticResource TitleBarCloseButtonStyle}"
+                    Click="CloseBtn_Click"
+                    ToolTipService.ToolTip="Đóng">
+                <FontIcon Glyph="&#xE8BB;" FontSize="10" />
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

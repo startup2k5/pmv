@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "windown (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "windown (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

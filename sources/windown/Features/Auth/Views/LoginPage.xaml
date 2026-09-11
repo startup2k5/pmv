@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="windown.Features.Auth.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <!-- Khung Đăng Nhập căn giữa màn hình với hiệu ứng Acrylic/Card -->
+        <Border HorizontalAlignment="Center" 
+                VerticalAlignment="Center"
+                Width="420"
+                Background="{ThemeResource LayerFillColorDefaultBrush}"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="32">
+            
+            <StackPanel Spacing="20">
+                <!-- Header: Logo & Tên phần mềm -->
+                <StackPanel Spacing="8" HorizontalAlignment="Center">
+                    <Image Source="ms-appx:///Resources/Logos/Square44x44Logo.png" 
+                           Width="48" 
+                           Height="48" 
+                           HorizontalAlignment="Center" />
+                    
+                    <TextBlock Text="ĐĂNG NHẬP HỆ THỐNG" 
+                               Style="{ThemeResource SubtitleTextBlockStyle}" 
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center" />
+                    
+                    <TextBlock Text="Phần mềm quản lý tiệm vàng &amp; trang sức" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                               HorizontalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Divider nhẹ -->
+                <MenuFlyoutSeparator Margin="0,-4,0,-4"/>
+
+                <!-- Form đăng nhập -->
+                <StackPanel Spacing="14">
+                    <!-- Chi nhánh -->
+                    <ComboBox x:Name="BranchBox" 
+                              Header="Chi nhánh làm việc" 
+                              HorizontalAlignment="Stretch"
+                              SelectedIndex="0">
+                        <ComboBoxItem Content="Chi nhánh Trung Tâm" />
+                        <ComboBoxItem Content="Chi nhánh Quận 1" />
+                        <ComboBoxItem Content="Chi nhánh Hà Nội" />
+                    </ComboBox>
+
+                    <!-- Tài khoản -->
+                    <TextBox x:Name="UsernameBox" 
+                             Header="Tên đăng nhập / Mã nhân viên" 
+                             PlaceholderText="Nhập tài khoản"
+                             Text="admin" />
+
+                    <!-- Mật khẩu -->
+                    <PasswordBox x:Name="PasswordBox" 
+                                 Header="Mật khẩu" 
+                                 PlaceholderText="Nhập mật khẩu"
+                                 Password="••••••••" />
+                </StackPanel>
+
+                <!-- Nút Đăng Nhập -->
+                <Button x:Name="LoginBtn" 
+                        Content="Đăng Nhập Vào Hệ Thống" 
+                        Style="{ThemeResource AccentButtonStyle}" 
+                        HorizontalAlignment="Stretch"
+                        Height="40"
+                        Click="LoginBtn_Click" />
+
+                <!-- Footer thông tin bản quyền -->
+                <TextBlock Text="Phiên bản 1.0.0 • PMV Gold Business" 
+                           Style="{ThemeResource CaptionTextBlockStyle}" 
+                           Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                           HorizontalAlignment="Center" 
+                           Margin="0,8,0,0" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

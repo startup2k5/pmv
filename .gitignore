@@ -1,0 +1,79 @@
+# =====================================================================
+# THƯ MỤC BACKUP VÀ TẠM THỜI (THEO YÊU CẦU NGƯỜI DÙNG)
+# =====================================================================
+backup/
+backup/**
+*.bak
+*.backup
+
+# =====================================================================
+# FILE MÔI TRƯỜNG & LOGS
+# =====================================================================
+.env
+.env.*
+*.env
+*.log
+logs/
+**/logs/
+
+# =====================================================================
+# .NET / C# / WINUI 3 / VISUAL STUDIO
+# =====================================================================
+## Thư mục build output và tạm thời
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+[Aa]pp[Pp]ackages/
+**/[Aa]pp[Pp]ackages/
+BundleArtifacts/
+**/BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+
+## Visual Studio & VS Code cache
+.vs/
+**/.vs/
+.vscode/
+**/.vscode/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+
+# =====================================================================
+# JAVA / GRADLE / SPRING BOOT (BACKEND)
+# =====================================================================
+.gradle/
+**/.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+out/
+**/out/
+.idea/
+**/.idea/
+*.iws
+*.iml
+*.ipr
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# =====================================================================
+# HỆ ĐIỀU HÀNH & HỆ THỐNG (OS / METADATA)
+# =====================================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.Spotlight-V100
+.Trashes

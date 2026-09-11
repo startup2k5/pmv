@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <!-- Nạp bảng mã màu gốc để ánh xạ thành các Brush theo Theme -->
+        <ResourceDictionary Source="ms-appx:///Common/Styles/Colors.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- ========================================================================= -->
+    <!-- HỆ THỐNG THEME RIÊNG BIỆT (THEME DICTIONARIES: DARK / LIGHT MODE)          -->
+    <!-- Quản lý toàn bộ Semantic Brushes tương ứng theo từng chế độ giao diện     -->
+    <!-- ========================================================================= -->
+    <ResourceDictionary.ThemeDictionaries>
+
+        <!-- ===================================================================== -->
+        <!-- 1. THEME TỐI (DARK MODE - MẶC ĐỊNH CHO MICA & TIỆM VÀNG SANG TRỌNG)   -->
+        <!-- ===================================================================== -->
+        <ResourceDictionary x:Key="Default">
+
+            <!-- 1.1. Brushes cho TitleBar & Nút Hệ Thống (Window Chrome) -->
+            <SolidColorBrush x:Key="TitleBarButtonHoverBrush" Color="{StaticResource ColorTitleBarHoverDark}" />
+            <SolidColorBrush x:Key="TitleBarButtonPressedBrush" Color="{StaticResource ColorTitleBarPressedDark}" />
+            <SolidColorBrush x:Key="TitleBarButtonForegroundBrush" Color="#FFFFFF" />
+            
+            <!-- Nút Đóng (Close Button) màu đỏ chuẩn Windows khi hover/pressed -->
+            <SolidColorBrush x:Key="TitleBarCloseHoverBrush" Color="{StaticResource ColorStatusDanger}" />
+            <SolidColorBrush x:Key="TitleBarClosePressedBrush" Color="{StaticResource ColorStatusDangerPressed}" />
+            <SolidColorBrush x:Key="TitleBarCloseHoverForegroundBrush" Color="#FFFFFF" />
+
+            <!-- 1.2. Brushes Vàng Kim Thương Hiệu (Brand Gold) -->
+            <SolidColorBrush x:Key="BrandGoldBrush" Color="{StaticResource ColorGoldPrimary}" />
+            <SolidColorBrush x:Key="BrandGoldHoverBrush" Color="{StaticResource ColorGoldHover}" />
+            <SolidColorBrush x:Key="BrandGoldPressedBrush" Color="{StaticResource ColorGoldPressed}" />
+            <SolidColorBrush x:Key="BrandGoldLightBrush" Color="{StaticResource ColorGoldLight}" />
+            <SolidColorBrush x:Key="BrandGoldDarkBrush" Color="{StaticResource ColorGoldDark}" />
+            <SolidColorBrush x:Key="BrandRoseGoldBrush" Color="{StaticResource ColorRoseGold}" />
+            <SolidColorBrush x:Key="BrandPlatinumBrush" Color="{StaticResource ColorPlatinum}" />
+
+            <!-- 1.3. Brushes Nền và Bề Mặt Thẻ (Surface & Card) -->
+            <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource ColorSurfaceDark}" />
+            <SolidColorBrush x:Key="AppCardBackgroundBrush" Color="{StaticResource ColorSurfaceDarkCard}" />
+            <SolidColorBrush x:Key="AppCardBorderBrush" Color="{StaticResource ColorBorderDark}" />
+
+            <!-- 1.4. Brushes Màu Chữ (Typography Text) -->
+            <SolidColorBrush x:Key="AppTextPrimaryBrush" Color="{StaticResource ColorTextDarkPrimary}" />
+            <SolidColorBrush x:Key="AppTextSecondaryBrush" Color="{StaticResource ColorTextDarkSecondary}" />
+            <SolidColorBrush x:Key="AppTextMutedBrush" Color="{StaticResource ColorTextDarkMuted}" />
+
+            <!-- 1.5. Brushes Trạng Thái Hệ Thống (Status Brushes) -->
+            <SolidColorBrush x:Key="StatusSuccessBrush" Color="{StaticResource ColorStatusSuccess}" />
+            <SolidColorBrush x:Key="StatusWarningBrush" Color="{StaticResource ColorStatusWarning}" />
+            <SolidColorBrush x:Key="StatusDangerBrush" Color="{StaticResource ColorStatusDanger}" />
+            <SolidColorBrush x:Key="StatusInfoBrush" Color="{StaticResource ColorStatusInfo}" />
+
+        </ResourceDictionary>
+
+        <!-- ===================================================================== -->
+        <!-- 2. THEME SÁNG (LIGHT MODE - THANH LỊCH, ĐỘ TƯƠNG PHẢN CAO)            -->
+        <!-- ===================================================================== -->
+        <ResourceDictionary x:Key="Light">
+
+            <!-- 2.1. Brushes cho TitleBar & Nút Hệ Thống (Window Chrome) -->
+            <SolidColorBrush x:Key="TitleBarButtonHoverBrush" Color="{StaticResource ColorTitleBarHoverLight}" />
+            <SolidColorBrush x:Key="TitleBarButtonPressedBrush" Color="{StaticResource ColorTitleBarPressedLight}" />
+            <SolidColorBrush x:Key="TitleBarButtonForegroundBrush" Color="#1A1A1A" />
+
+            <!-- Nút Đóng (Close Button) giữ màu đỏ chuẩn Windows khi hover/pressed -->
+            <SolidColorBrush x:Key="TitleBarCloseHoverBrush" Color="{StaticResource ColorStatusDanger}" />
+            <SolidColorBrush x:Key="TitleBarClosePressedBrush" Color="{StaticResource ColorStatusDangerPressed}" />
+            <SolidColorBrush x:Key="TitleBarCloseHoverForegroundBrush" Color="#FFFFFF" />
+
+            <!-- 2.2. Brushes Vàng Kim Thương Hiệu (Tối ưu tương phản trên nền sáng) -->
+            <SolidColorBrush x:Key="BrandGoldBrush" Color="{StaticResource ColorGoldDark}" />
+            <SolidColorBrush x:Key="BrandGoldHoverBrush" Color="{StaticResource ColorGoldPrimary}" />
+            <SolidColorBrush x:Key="BrandGoldPressedBrush" Color="{StaticResource ColorGoldPressed}" />
+            <SolidColorBrush x:Key="BrandGoldLightBrush" Color="{StaticResource ColorGoldLight}" />
+            <SolidColorBrush x:Key="BrandGoldDarkBrush" Color="{StaticResource ColorGoldDark}" />
+            <SolidColorBrush x:Key="BrandRoseGoldBrush" Color="{StaticResource ColorRoseGold}" />
+            <SolidColorBrush x:Key="BrandPlatinumBrush" Color="{StaticResource ColorPlatinum}" />
+
+            <!-- 2.3. Brushes Nền và Bề Mặt Thẻ (Surface & Card) -->
+            <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource ColorSurfaceLight}" />
+            <SolidColorBrush x:Key="AppCardBackgroundBrush" Color="{StaticResource ColorSurfaceLightCard}" />
+            <SolidColorBrush x:Key="AppCardBorderBrush" Color="{StaticResource ColorBorderLight}" />
+
+            <!-- 2.4. Brushes Màu Chữ (Typography Text) -->
+            <SolidColorBrush x:Key="AppTextPrimaryBrush" Color="{StaticResource ColorTextLightPrimary}" />
+            <SolidColorBrush x:Key="AppTextSecondaryBrush" Color="{StaticResource ColorTextLightSecondary}" />
+            <SolidColorBrush x:Key="AppTextMutedBrush" Color="{StaticResource ColorTextLightMuted}" />
+
+            <!-- 2.5. Brushes Trạng Thái Hệ Thống (Status Brushes) -->
+            <SolidColorBrush x:Key="StatusSuccessBrush" Color="{StaticResource ColorStatusSuccess}" />
+            <SolidColorBrush x:Key="StatusWarningBrush" Color="{StaticResource ColorStatusWarning}" />
+            <SolidColorBrush x:Key="StatusDangerBrush" Color="{StaticResource ColorStatusDanger}" />
+            <SolidColorBrush x:Key="StatusInfoBrush" Color="{StaticResource ColorStatusInfo}" />
+
+        </ResourceDictionary>
+
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>

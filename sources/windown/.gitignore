@@ -1,0 +1,20 @@
+## Build and intermediate output
+[Bb]in/
+[Oo]bj/
+[Aa]pp[Pp]ackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+
+## Visual Studio & Rider
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+.idea/
+.vscode/
+
+## Logs
+*.log

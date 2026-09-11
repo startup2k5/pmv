@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="windown.Features.Pos.Views.PosPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Padding="24" RowDefinitions="Auto,*">
+        <!-- Header trang POS -->
+        <StackPanel Grid.Row="0" Spacing="4" Margin="0,0,0,20">
+            <TextBlock Text="Bán Hàng POS &amp; Thu Mua Vàng" Style="{ThemeResource TitleTextBlockStyle}" FontWeight="SemiBold" />
+            <TextBlock Text="Giao dịch bán lẻ trang sức, tính tiền theo tuổi vàng và trọng lượng cân thực tế" 
+                       Style="{ThemeResource BodyTextBlockStyle}" 
+                       Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+        </StackPanel>
+
+        <!-- Khung chức năng chính của POS -->
+        <Grid Grid.Row="1" ColumnDefinitions="2*,1*" ColumnSpacing="16">
+            <!-- Cột trái: Bảng hàng hóa / Giỏ hàng -->
+            <Border Grid.Column="0" 
+                    Background="{ThemeResource LayerFillColorDefaultBrush}" 
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                    BorderThickness="1" 
+                    CornerRadius="8" 
+                    Padding="20">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="12">
+                    <FontIcon Glyph="&#xE7BF;" FontSize="48" Foreground="{ThemeResource AccentAAFillColorDefaultBrush}" />
+                    <TextBlock Text="Màn Hình Bán Hàng &amp; Quét Mã Vạch Sẵn Sàng" 
+                               Style="{ThemeResource SubtitleTextBlockStyle}" 
+                               HorizontalAlignment="Center" />
+                    <TextBlock Text="Nhân viên có thể quét mã tem vàng hoặc nhập mã món để bắt đầu giao dịch" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               Foreground="{ThemeResource TextFillColorSecondaryBrush}" 
+                               HorizontalAlignment="Center" />
+                </StackPanel>
+            </Border>
+
+            <!-- Cột phải: Thông tin cân vàng & Thanh toán -->
+            <Border Grid.Column="1" 
+                    Background="{ThemeResource LayerFillColorDefaultBrush}" 
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                    BorderThickness="1" 
+                    CornerRadius="8" 
+                    Padding="20">
+                <StackPanel Spacing="16">
+                    <TextBlock Text="Thông Tin Cân Điện Tử" Style="{ThemeResource SubtitleTextBlockStyle}" FontWeight="SemiBold" />
+                    
+                    <!-- Hiển thị số cân mẫu -->
+                    <Border Background="{ThemeResource SubtleFillColorSecondaryBrush}" CornerRadius="6" Padding="16">
+                        <StackPanel Spacing="4" HorizontalAlignment="Center">
+                            <TextBlock Text="0.000 g" FontSize="28" FontWeight="Bold" Foreground="{ThemeResource SystemFillColorSuccessBrush}" HorizontalAlignment="Center"/>
+                            <TextBlock Text="0 chỉ 00 phân" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Button Content="Tạo Hóa Đơn Mới" Style="{ThemeResource AccentButtonStyle}" HorizontalAlignment="Stretch" Height="40" />
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

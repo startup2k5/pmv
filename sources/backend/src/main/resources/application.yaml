@@ -1,17 +1,15 @@
 server:
-  port: ${SERVER_PORT}
+  port: 8080
 
 spring:
   application:
     name: backend
-  profiles:
-    active: ${SERVER_PROFILE}
   datasource:
-    url: jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
-    username: ${DATABASE_USER}
-    password: ${DATABASE_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/GMS2026
+    username: "postgres"
+    password: "admin"
     hikari:
-      pool-name: data-pood
+      pool-name: data
       maximum-pool-size: 20
       minimum-idle: 10
       connection-test-query: SELECT 1
@@ -32,8 +30,6 @@ logging:
       max-file-size: 10MB
       max-history: 7
       total-size-cap: 1GB
-
-jwt:
-  secret: d4e1f7a8b2c5e9301467f8923a4b5c6d7e8f0123456789abcdef0123456789ab
-  issuer: pmv
-  expiration: 86400000
+  level:
+    root: INFO
+    com.app.backend: INFO
